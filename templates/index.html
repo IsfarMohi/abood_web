@@ -1,0 +1,2796 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="main-html">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industrial Supply & HVAC Company in Jeddah | Jazaaco Ventures Saudi Arabia</title>
+<meta name="description" content="Jazaaco Ventures is a trusted industrial supply and HVAC company in Jeddah, Saudi Arabia. Providing MEP services, concrete cooling, and industrial solutions aligned with Vision 2030.">
+<meta name="keywords" content="Industrial Supply Saudi Arabia, HVAC Jeddah, MEP Contractor Saudi, Concrete Cooling Saudi Arabia, توريدات صناعية جدة, صيانة تكييف جدة">
+<meta name="author" content="Jazaaco Ventures">
+<meta name="geo.region" content="SA-02">
+<meta name="geo.placename" content="Jeddah">
+<meta name="geo.position" content="21.543333;39.215478">
+<meta name="ICBM" content="21.543333, 39.215478">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Jazaaco Ventures",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7393 Al Tadamun Al Arabi, Al-Rehab",
+    "addressLocality": "Jeddah",
+    "postalCode": "23343",
+    "addressCountry": "SA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 21.543333,
+    "longitude": 39.215478
+  },
+  "telephone": "+966126125560",
+  "email": "javed@jazaacoventures.sa",
+  "areaServed": "Saudi Arabia"
+}
+</script>
+ <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>
+:root {
+  --primary: #004a99;
+  --secondary: #333;
+  --light: #f4f4f4;
+  --white: #ffffff;
+  --topbar-height: 38px;
+  --nav-height: 90px;
+  --form-padding: 40px;
+  --form-radius: 12px;
+  --form-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  --input-padding: 15px 20px;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--secondary);
+  overflow-x: hidden;
+  padding-top: calc(var(--nav-height) + var(--topbar-height));
+}
+[dir="rtl"] body { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+.center-text { text-align: center !important; margin: 20px 0; }
+/* ── Top Social & Language Bar ───────────────────────────────────── */
+.top-social-bar {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 6px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  font-size: 0.9rem;
+}
+.container-top {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lang-part, .social-part {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.social-part a {
+  color: #555;
+  font-size: 1.35rem;
+  transition: all 0.25s ease;
+}
+.social-part a:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+.lang-part .separator { color: #ccc; margin: 0 4px; user-select: none; }
+.lang-btn {
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.6;
+}
+.lang-btn:hover,
+.active-lang {
+  opacity: 1;
+  color: var(--primary);
+}
+.active-lang { text-decoration: underline; }
+/* ── Main Navigation ─────────────────────────────────────────────── */
+nav {
+  background: white;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: fixed;
+  top: var(--topbar-height);
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+[dir="rtl"] nav { direction: rtl; }
+.logo img { height: 100px; object-fit: contain; }
+.nav-right { display: flex; align-items: center; gap: 25px; }
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links li { position: relative; }
+.nav-links a, .dropdown-toggle {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.nav-links a:hover, .dropdown-toggle:hover { color: var(--primary); }
+nav {
+  position: fixed;
+  top: var(--topbar-height);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  transition: transform 0.4s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+nav.hidden {
+  transform: translateY(-100%);
+}
+/* DROPDOWN */
+.dropdown { position: relative; }
+.dropdown-toggle { display: flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; padding: 8px 12px; border-radius: 6px; }
+.dropdown-toggle:hover { color: var(--primary); background: rgba(0, 74, 153, 0.05); }
+.dropdown-toggle::after { content: '▼'; font-size: 0.7rem; transition: transform 0.3s ease; }
+.dropdown.active .dropdown-toggle::after { transform: rotate(180deg); }
+.dropdown-menu { position: absolute; top: 100%; left: 0; background: white; min-width: 220px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-radius: 8px; margin-top: 8px; padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; z-index: 1001; list-style: none; }
+[dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+.dropdown.active .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.dropdown-menu a, .dropdown-submenu .submenu-toggle { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; color: var(--secondary); text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.3s ease; cursor: pointer; }
+.dropdown-menu a:hover, .dropdown-submenu .submenu-toggle:hover { background: var(--light); color: var(--primary); padding-left: 28px; }
+[dir="rtl"] .dropdown-menu a:hover, [dir="rtl"] .dropdown-submenu .submenu-toggle:hover { padding-left: 20px; padding-right: 28px; }
+.dropdown-submenu { position: relative; }
+.dropdown-submenu .submenu { position: absolute; top: 0; left: 100%; background: white; min-width: 220px; box-shadow: 0 8px 20px rgba(0,0,0,0.18); border-radius: 8px; margin-left: 6px; padding: 8px 0; opacity: 0; visibility: hidden; transform: translateX(10px); transition: all 0.25s ease; z-index: 1002; list-style: none; }
+[dir="rtl"] .dropdown-submenu .submenu { left: auto; right: 100%; margin-left: 0; margin-right: 6px; transform: translateX(-10px); }
+.dropdown-submenu.active .submenu { opacity: 1; visibility: visible; transform: translateX(0); }
+.submenu a { display: block; padding: 10px 24px; color: var(--secondary); text-decoration: none; font-size: 0.84rem; transition: all 0.3s ease; }
+.submenu a:hover { background: var(--light); color: var(--primary); padding-left: 32px; }
+[dir="rtl"] .submenu a:hover { padding-left: 20px; padding-right: 32px; }
+.dropdown-toggle::after {
+  content: ' ▼';
+  font-size: 0.75rem;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+.dropdown.active .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+/* LANGUAGE SWITCH */
+.lang-switch { border-left: 1px solid #ddd; padding-left: 15px; font-weight: bold; font-size: 0.85rem; cursor: pointer; display: flex; gap: 6px; align-items: center; user-select: none; }
+[dir="rtl"] .lang-switch { border-left: none; border-right: 1px solid #ddd; padding-left: 0; padding-right: 15px; }
+.lang-btn { opacity: 0.5; transition: 0.3s; cursor: pointer; }
+.lang-btn:hover { opacity: 1; color: var(--primary); }
+.active-lang { opacity: 1; color: var(--primary); text-decoration: underline; }
+/* MOBILE MENU */
+.mobile-menu-toggle { display: none; font-size: 28px; cursor: pointer; padding: 10px; background: none; border: none; color: var(--secondary); }
+/* PAGE CONTENT */
+.page-content { display: none; animation: fadeIn 0.4s ease; }
+#main-site-content { display: block; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.tech-detail-container { padding: 40px 5%; max-width: 1000px; margin: 0 auto; }
+.back-btn { background: var(--primary); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-bottom: 20px; transition: 0.3s; }
+.back-btn:hover { background: #003d7a; }
+.project-cta-btn {
+  display: inline-block;
+  padding: 16px 42px;
+  font-size: 1.12rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #0066cc 0%, #004080 100%);
+  border-radius: 12px;
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.3);
+}
+.project-cta-btn:hover {
+  background: linear-gradient(135deg, #0077e6 0%, #0055b3 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 102, 204, 0.4);
+}
+/* HERO */
+.hero { position: relative; height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px; overflow: hidden; }
+.hero-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; object-fit: cover; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1; }
+.hero-content { position: relative; z-index: 2; }
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+/* SERVICES */
+.services { padding: 50px 5%; text-align: center; }
+.deliverables-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 40px; }
+@media (max-width: 1024px) { .deliverables-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .deliverables-grid { grid-template-columns: 1fr; } }
+.deliverable-card { background: var(--white); padding: 30px; border-radius: 10px; text-align: center; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.deliverable-card:hover { transform: translateY(-6px); border-bottom: 4px solid var(--primary); }
+.deliverable-card .icon { font-size: 2.5rem; margin-bottom: 15px; }
+.deliverable-card .emoji-img { width: 52px; height: 52px; object-fit: cover; vertical-align: middle; border-radius: 8px; }
+.deliverable-card h3 { color: var(--primary); margin-bottom: 10px; }
+.deliverable-card p { font-size: 0.9rem; line-height: 1.5; }
+/* IMAGES */
+.image-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-top: 20px; }
+.square-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+.image-caption { text-align: center; margin-top: 8px; font-size: 0.85rem; color: var(--secondary); font-weight: 600; }
+.video-section { text-align: center; margin: 40px 0; }
+.video-section video { border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+/* SECTIONS */
+.about-section, .supply-section, .mep-section, .client-section { padding: 80px 5%; background: var(--white); }
+.supply-section { background: #fafafa; }
+.container { max-width: 900px; margin: 0 auto; }
+.section-title { color: var(--primary); font-size: 2.2rem; margin-bottom: 30px; text-align: center; }
+p { margin-bottom: 20px; text-align: left; }
+[dir="rtl"] p { text-align: right; }
+/* ── Lists & Bullets ─────────────────────────────────────────────── */
+.about-section ul,
+.supply-section ul,
+.mep-section ul,
+.tech-detail-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.6em 0;
+}
+.about-section ul li,
+.supply-section ul li,
+.mep-section ul li,
+.tech-detail-container ul li {
+  position: relative;
+  padding-left: 32px; /* space for the bullet */
+  margin-bottom: 14px;
+  text-align: left;
+}
+[dir="rtl"] .about-section ul li,
+[dir="rtl"] .supply-section ul li,
+[dir="rtl"] .mep-section ul li,
+[dir="rtl"] .tech-detail-container ul li {
+  padding-left: 0;
+  padding-right: 32px;
+  text-align: right;
+}
+/* Modern blue bullet instead of checkmark */
+.about-section ul li::before,
+.supply-section ul li::before,
+.mep-section ul li::before,
+.tech-detail-container ul li::before {
+  content: "•";
+  color: var(--primary);
+  font-size: 1.6rem; /* makes bullet nicely visible */
+  position: absolute;
+  left: 4px;
+  top: -2px;
+  line-height: 1;
+  font-weight: 900;
+}
+[dir="rtl"] .about-section ul li::before,
+[dir="rtl"] .supply-section ul li::before,
+[dir="rtl"] .mep-section ul li::before,
+[dir="rtl"] .tech-detail-container ul li::before {
+  left: auto;
+  right: 4px;
+}
+/* PROJECTS SECTION */
+.projects-section { padding: 80px 5%; background: #fafafa; }
+.project-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+.project-card:hover { transform: translateY(-5px); }
+.project-card img { width: 100%; height: 220px; object-fit: cover; }
+.project-card > div { padding: 20px; }
+.project-card h3 { color: var(--primary); margin-bottom: 10px; }
+.project-card small { color: #666; }
+.project-card {
+  cursor: pointer;
+}
+/* Optional – nicer hover feedback */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+}
+/* CONTACT */
+.contact-section { padding: 60px 20px; background-color: #f9f9f9; text-align: left; }
+[dir="rtl"] .contact-section { text-align: right; }
+.contact-section .pre-title { color: #ff5722; font-weight: bold; margin-bottom: 10px; display: inline-block; border-left: 4px solid #ff5722; padding-left: 10px; }
+[dir="rtl"] .contact-section .pre-title { border-left: none; border-right: 4px solid #ff5722; padding-left: 0; padding-right: 10px; }
+.contact-section .section-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 40px; line-height: 1.2; }
+.contact-form { display: flex; flex-direction: column; gap: 20px; margin-bottom: 60px; max-width: 800px; }
+.contact-form .form-row { display: flex; gap: 20px; flex-wrap: wrap; }
+.contact-form input, .contact-form textarea { flex: 1; padding: 15px 20px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; box-sizing: border-box; min-height: 50px; font-family: inherit; }
+.contact-form textarea { min-height: 120px; resize: vertical; }
+.contact-form .submit-btn { width: 200px; padding: 15px; background-color: #ff5722; color: #fff; border: none; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s ease; align-self: flex-start; }
+.contact-form .submit-btn:hover { background-color: #e64a19; }
+.map-container { display: flex; flex-wrap: wrap; gap: 20px; }
+.map-frame { flex: 2; min-width: 300px; height: 400px; border-radius: 8px; border: 0; }
+.contact-info { flex: 1; min-width: 250px; padding: 30px; background: white; border-radius: 8px; }
+[dir="rtl"] .map-container { flex-direction: row-reverse; }
+.phone-number { direction: ltr; display: inline-block; }
+.map-btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 5px; transition: 0.3s; }
+.map-btn:hover { background: #003d7a; }
+/* BACK TO TOP */
+#backToTop { position: fixed; bottom: 30px; right: 30px; background: var(--primary); color: white; border: none; padding: 12px 18px; border-radius: 50px; cursor: pointer; display: none; z-index: 999; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+[dir="rtl"] #backToTop { right: auto; left: 30px; }
+/* FOOTER */
+footer { background: #222; color: white; padding: 40px 5%; text-align: center; }
+/* ─────────────────────────────────────────────
+   CLIENT / PARTNER MARQUEE (NEW – RTL SAFE)
+───────────────────────────────────────────── */
+.clients-marquee-wrapper,
+.loop-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+  background: #f9f9f9;
+  direction: ltr; /* force LTR for animation */
+}
+.clients-marquee-track,
+.loop-slider-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+:root[dir="rtl"] .clients-marquee-track,
+:root[dir="rtl"] .loop-slider-track {
+  animation-direction: reverse;
+}
+.loop-slide,
+.clients-marquee-slide {
+  flex-shrink: 0;
+  width: 200px;
+  height: 120px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.loop-slide:hover,
+.clients-marquee-slide:hover {
+  transform: scale(1.06);
+}
+.loop-slide img,
+.clients-marquee-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.loop-slide:hover img,
+.clients-marquee-slide:hover img {
+  filter: grayscale(0%);
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+/* Mobile adjustments */
+@media (max-width: 992px) {
+  .top-social-bar { font-size: 0.85rem; }
+  .social-part a { font-size: 1.25rem; }
+}
+@media (max-width: 768px) {
+  .top-social-bar { display: none; }
+  body { padding-top: var(--nav-height); }
+  nav { top: 0; }
+  .mobile-menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .nav-links.active { display: flex; }
+}
+/* SECTION */
+/* SECTION */
+/* ─────────────────────────────────────────────
+   EXECUTIVE MANAGEMENT / LEADERSHIP SECTION
+   (adapted to match site's color scheme)
+───────────────────────────────────────────── */
+.executive-management {
+  padding: 90px 5%;
+  background: linear-gradient(135deg, #f7f9fc, #eef2f7); /* soft gradient like your team-section */
+}
+.executive-management .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  color: var(--primary); /* #004a99 */
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.section-subtitle {
+  text-align: center;
+  color: var(--secondary);
+  max-width: 680px;
+  margin: 0 auto 60px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 25px; /* slightly tighter horizontal gap if needed */
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1250px; /* optional – prevents cards from stretching too wide */
+}
+.executive-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  width: 100%;
+  max-width: 320px;
+}
+.executive-management .container {
+  max-width: 1280px; /* ← increased a bit (was 1200px) */
+  margin: 0 auto;
+  padding: 0 20px; /* optional – helps centering */
+}
+.executive-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+.executive-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  border: 4px solid rgba(0, 74, 153, 0.12); /* subtle primary tint border */
+}
+.executive-card h3 {
+  color: var(--primary);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.executive-card span {
+  color: #555;
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .executive-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .executive-card {
+    max-width: 340px;
+    padding: 24px 18px;
+  }
+  .executive-card img {
+    width: 130px;
+    height: 130px;
+  }
+}
+/* Optional: nudge it to prefer 4 cards earlier */
+@media (min-width: 1200px) {
+  .executive-grid {
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+  }
+/* ─────────────────────────────────────────────
+   PRODUCT / EQUIPMENT / FIRE & SAFETY IMAGES
+   (SAFE SCOPED IMAGE FIT)
+───────────────────────────────────────────── */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 40px;
+}
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.14);
+}
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain; /* 🔥 NO CROPPING */
+  object-position: center;
+  display: block;
+}
+.product-card h4 {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+/* ─────────────────────────────────────────────
+   LARGE FIRE & SAFETY BANNER IMAGE
+───────────────────────────────────────────── */
+.fire-banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+/* ─────────────────────────────────────────────
+   BRAND LOGOS (Viking, Tyco, Honeywell etc.)
+───────────────────────────────────────────── */
+.brand-logo {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.brand-logo:hover {
+  filter: grayscale(0%);
+}
+/* ─────────────────────────────────────────────
+   TEAM SECTION FIX (SAFE)
+───────────────────────────────────────────── */
+.nav-links a[data-key="nav-team"] {
+  text-transform: capitalize;
+}
+/* ─────────────────────────────────────────────
+   MOBILE IMAGE OPTIMIZATION
+───────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .product-card img {
+    height: 130px;
+  }
+  .fire-banner img {
+    height: 220px;
+  }
+}
+* project*
+.project-detail-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.project-swiper {
+  width: 85%;
+  max-width: 900px;
+  height: 280px;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.project-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-info {
+  text-align: center; /* or left, your choice */
+  max-width: 900px;
+  margin: 0 auto;
+}
+.project-info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.project-info p {
+  font-size: 1.25rem;
+  color: #444;
+  margin: 0.5rem 0 1.5rem;
+}
+.project-meta {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+.project-meta p {
+  font-size: 1.15rem;
+  margin: 0.8rem 0;
+}
+.project-meta strong {
+  color: #1a3c6d; /* or your brand color */
+}
+.client-logo-slider,
+.logo-carousel,
+.your-slider-class {
+  direction: rtl !important;
+}
+/* If using transform-based animation, you may need: */
+.your-slider-class .track {
+  transform: translateX(0) !important; /* or adjust values */
+}
+/* ── CONTAINER ───────────────────────────────────────── */
+.jobs-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: var(--white);
+  padding: var(--form-padding);
+  border-radius: var(--form-radius);
+  box-shadow: var(--form-shadow);
+}
+.jobs-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.jobs-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+/* ── FORM ────────────────────────────────────────────── */
+.jobs-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],  /* ← Add this */
+select,
+input[type="file"] {
+  padding: var(--input-padding);
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,  /* ← Add this */
+select:focus,
+input[type="file"]:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 5px rgba(0, 74, 153, 0.3);
+  
+}
+/* Dropdown arrow styling */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--white) url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200L5%206L10%200H0Z%22%20fill%3D%22333%22/%3E%3C/svg%3E") no-repeat right 12px center;
+  background-size: 10px 6px;
+  cursor: pointer;
+}
+/* Button styling */
+button[type="submit"] {
+  padding: 14px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+button[type="submit"]:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+/* ── RESPONSIVE ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .jobs-container {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+  .jobs-container h1 {
+    font-size: 1.9rem;
+  }
+}
+/* ── TWO-COLUMN ROWS ─────────────────────────────────────── */
+.form-row {
+  display: flex;
+  gap: 20px; /* space between the two columns */
+  flex-wrap: wrap; /* allows wrapping on very narrow screens */
+}
+.form-row .form-group {
+  flex: 1; /* each takes equal space */
+  min-width: 250px; /* prevents them from becoming too narrow */
+}
+/* On smaller screens → stack vertically */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-row .form-group {
+    flex: none;
+    width: 100%;
+  }
+}
+/* Optional: make labels and inputs look even cleaner */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; /* ensure full width inside their group */
+  box-sizing: border-box;
+}
+/* Your existing styles for inputs, button, etc. remain the same */
+</style>
+</head>
+<body>
+<!-- Top Bar with Language + All Social Icons -->
+<div class="top-social-bar">
+  <div class="container-top">
+    <div class="lang-part">
+      <span class="lang-btn active-lang" id="btn-en" onclick="setLanguage('en')">EN</span>
+      <span class="separator">|</span>
+      <span class="lang-btn" id="btn-ar" onclick="setLanguage('ar')">عربي</span>
+    </div>
+    <div class="social-part">
+      <a href="https://wa.me/966126125560" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/jazaacoventures/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/jazaaco-ventures/posts/?feedView=all" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@JazaacoVentures" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+	  <a href="https://www.facebook.com/profile.php?id=61587050456274" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+	  <a href="https://x.com/jazaacoventures" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+</div>
+<!-- Clean Main Navigation (no social icons or language switcher inside) -->
+<nav id="main-nav">
+  <a href="#" class="logo" onclick="showPage('main-site-content')">
+    <img src="jazaaco-ventures-logo.png" alt="Jazaaco Ventures Logo" width="220" height="115">
+  </a>
+  <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+  <div class="nav-right">
+    <ul class="nav-links" id="main-menu">
+      <li><a href="#" onclick="showPage('main-site-content')" data-key="nav-home">Home</a></li>
+    
+<li class="dropdown">
+        <a class="dropdown-toggle" data-key="nav-about">About Us</a>
+        <div class="dropdown-menu">
+         <!-- SERVICES DROPDOWN - now working -->
+    
+          <a href="#about" onclick="showPage('main-site-content')" data-key="nav-about">About Us</a>
+          <a href="#team" onclick="showPage('main-site-content')" data-key="nav-team">Team</a>
+          <a href="#careers" onclick="showPage('careers-page')" data-key="nav-careers">Careers</a>
+     
+   
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-key="nav-products">Products</a>
+        <div class="dropdown-menu">
+          <!-- your dropdown items here -->
+ 
+<!-- PRODUCTS DROPDOWN - now working -->
+    
+          <a href="#industrial-page" onclick="showPage('industrial-page')" data-key="nav-industrial">Industrial Supply</a>
+          <a href="#fire-safety-serv-page" onclick="showPage('fire-safety-serv-page')" data-key="nav-fire">Fire Protection</a>
+      
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-key="nav-services">Services</a>
+        <div class="dropdown-menu">
+         <!-- SERVICES DROPDOWN - now working -->
+    
+          <a href="#services" onclick="showPage('main-site-content')" data-key="nav-all-services">All Services</a>
+          <a href="#hvac-page" onclick="showPage('hvac-page')" data-key="nav-hvac">HVAC & MEP Services</a>
+          <a href="#cooling-page" onclick="showPage('cooling-page')" data-key="nav-cooling">Concrete Cooling</a>
+          <a href="#sustainability-page" onclick="showPage('sustainability-page')" data-key="nav-sustainability">Sustainability Services</a>
+          <a href="#fabrication-page" onclick="showPage('fabrication-page')" data-key="nav-fabrication">Fabrication Services</a>
+          <a href="#fire-safety-serv-page" onclick="showPage('fire-safety-serv-page')" data-key="nav-fire-services">Fire & Safety Services</a>
+     
+   
+        </div>
+      </li>
+  <li class="dropdown">
+        <a class="dropdown-toggle" data-key="nav-projects">Projects</a>
+        <div class="dropdown-menu">
+          <!-- your dropdown items here -->
+ 
+<!-- PRODUCTS DROPDOWN - now working -->
+  <a href="#projects" onclick="showPage('main-site-content')" data-key="nav-projects">Projects</a>
+          <a href="#almarai-page" onclick="showPage('almarai-page')" data-key="nav-project-almarai">Almarai Project</a>
+          <a href="#acino-page" onclick="showPage('acino-page')" data-key="nav-project-acino">Acino Project</a>
+		  <a href="#event-page" onclick="showPage('booths-page')" data-key="nav-project-booth">Event Booth</a>
+		  <a href="#zamil-page" onclick="showPage('zamil-page')" data-key="nav-project-zamil">Zamil HVAC Project</a>
+		  <a href="#nahdi-page" onclick="showPage('nahdi-page')" data-key="nav-project-nahdi">Nahdi Project</a>
+		  <a href="#flag-page" onclick="showPage('flag-page')" data-key="nav-project-flag">Flag Project</a>
+      
+        </div>
+      </li>
+    
+      <li><a href="#clients" onclick="showPage('main-site-content')" data-key="nav-clients">Clients</a></li>
+<!-- After – recommended -->
+      <li><a href="#contact" onclick="showPage('main-site-content')" data-key="nav-contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- BACK TO TOP -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+<!-- MAIN CONTENT -->
+<div id="main-site-content" class="page-content">
+<!-- HERO -->
+<header class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="hero-video.mp4" type="video/mp4">
+    <img src="hero-fallback.jpg" alt="Hero Image">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 data-key="hero-title">Industrial Excellence in Kingdom of Saudi Arabia</h1>
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px;" data-key="hero-subtitle">Your trusted partner for HVAC Maintenance, Concrete Cooling, and Global Industrial Supply Solutions.</p>
+  </div>
+</header>
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <h2 class="section-title" data-key="about-title">Building the Future of Saudi Industry with Integrity and Innovation</h2>
+    <h3 data-key="about-mission">Our Mission</h3>
+    <p data-key="about-description">At Jazaaco Ventures, we are dedicated to bridging the gap between global industrial standards and local market needs. Based in Jeddah, we provide world-class supply chain solutions, MEP services, and specialized cooling technologies that empower Saudi Arabia's infrastructure and industrial sectors.</p>
+    <p data-key="about-why-jazaaco"><strong data-key="about-why-title">Why Jazaaco Ventures?</strong><br><span data-key="about-why-desc">With a deep understanding of the Saudi landscape—from the humid coastal climates of Jeddah to the rigorous demands of Vision 2030 projects—we deliver reliability. Our team ensures that every client receives personalized service and technical precision.</span></p>
+    <h3 data-key="about-values">Our Core Values</h3>
+    <ul>
+      <li data-key="about-point-1"><strong>Quality First:</strong> Highest-grade materials and equipment.</li>
+      <li data-key="about-point-2"><strong>Sustainability:</strong> Protecting the Kingdom's environment.</li>
+      <li data-key="about-point-3"><strong>Local Partnership:</strong> Trusted partner for Jeddah's industrial community.</li>
+    </ul>
+  </div>
+</section>
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2 class="section-title" data-key="services-title">Our Core Deliverables</h2>
+  <p class="center-text" data-key="services-select-prompt"><strong>Select a service to view full technicalities.</strong></p>
+  <div class="deliverables-grid">
+    <div class="deliverable-card" onclick="showPage('industrial-page')">
+      <div class="icon"><img src="industrial-image.jpg" alt="industrial" class="emoji-img"></div>
+      <h3 data-key="service-1-title">Industrial Supply</h3>
+      <p data-key="service-1-desc">Top-tier equipment sourcing and supply chain management in Kingdom Of Saudi Arabia.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('hvac-page')">
+      <div class="icon"><img src="hvac-image.jpg" alt="hvac" class="emoji-img"></div>
+      <h3 data-key="service-3-title">HVAC & MEP</h3>
+      <p data-key="service-3-desc">Expert maintenance and mechanical engineering for large scale projects.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('cooling-page')">
+      <div class="icon"><img src="concrete-image.jpg" alt="concrete" class="emoji-img"></div>
+      <h3 data-key="service-4-title">Concrete Cooling</h3>
+      <p data-key="service-4-desc">Specialized temperature control solutions for construction.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('sustainability-page')">
+      <div class="icon"><img src="sustainable-image.jpg" alt="sustainable" class="emoji-img"></div>
+      <h3 data-key="service-5-title">Sustainable Architecture</h3>
+      <p data-key="service-5-desc">Commitment to energy-efficient operations.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('internal-architecture-page')">
+      <div class="icon"><img src="internal-image.jpg" alt="internal" class="emoji-img"></div>
+      <h3 data-key="service-6-title">Interior Products</h3>
+      <p data-key="service-6-desc">Functional, aesthetic, and compliant interior architectural solutions.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('telecom-page')">
+      <div class="icon"><img src="tele-image.jpg" alt="tele" class="emoji-img"></div>
+      <h3 data-key="service-7-title">Telecommunications</h3>
+      <p data-key="service-7-desc">Infrastructure setup, fiber optics, and network maintenance solutions.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('manpower-page')">
+      <div class="icon"><img src="manpower-image.jpg" alt="manpower" class="emoji-img"></div>
+      <h3 data-key="service-8-title">Manpower Supply</h3>
+      <p data-key="service-8-desc">Skilled and unskilled labor supply for specialized industrial projects.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('rentals-page')">
+      <div class="icon"><img src="rental-image.jpg" alt="rental" class="emoji-img"></div>
+      <h3 data-key="service-9-title">Rental Equipment</h3>
+      <p data-key="service-9-desc">Heavy machinery and specialized tool rentals for construction and oil & gas.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('construction-page')">
+      <div class="icon"><img src="construction-image.jpg" alt="construction" class="emoji-img"></div>
+      <h3 data-key="service-10-title">General Contracting</h3>
+      <p data-key="service-10-desc">End-to-end civil works, building construction, and project management.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('fabrication-page')">
+      <div class="icon"><img src="fabrication-image.jpg" alt="fabrication" class="emoji-img"></div>
+      <h3 data-key="service-11-title">Fabrication</h3>
+      <p data-key="service-11-desc">Custom steel fabrication, pipe spool manufacturing, and structural metalwork.</p>
+    </div>
+    <div class="deliverable-card" onclick="showPage('fire-safety-serv-page')">
+      <div class="icon"><img src="fire-image.jpg" alt="fire" class="emoji-img"></div>
+      <h3 data-key="service-2-title">Fire Protection & Safety</h3>
+      <p data-key="service-2-desc">Complete fire suppression systems, safety equipment, and emergency response solutions.</p>
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+  <div class="container">
+    <h2 class="section-title" data-key="projects-title">Our Projects</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;">
+      <div class="project-card" onclick="showPage('almarai-page')" >
+        <img src="almarai3-image.jpg" alt="Project 1">
+        <div>
+          <h3 data-key="project-1-title">Almarai Regional Office</h3>
+          <p data-key="project-1-desc">Acheived the target, and client satisfaction.</p>
+          <small data-key="project-1-date">2024–2025 </small>
+        </div>
+      </div>
+  <div class="project-card" onclick="showPage('acino-page')" >
+        <img src="acino-image.jpg" alt="Project 2">
+        <div>
+          <h3 data-key="project-2-title">Acino Interior Project</h3>
+          <p data-key="project-2-desc">Build entire interior with our productions.</p>
+          <small data-key="project-2-date">2024–2025 </small>
+        </div>
+      </div>
+  <div class="project-card" onclick="showPage('booths-page')" >
+        <img src="booths-image.jpg" alt="Project 3">
+        <div>
+          <h3 data-key="project-3-title">Booths For Malls/Events</h3>
+          <p data-key="project-3-desc">Build entire booths for malls and events.</p>
+          <small data-key="project-3-date">2024–2025 </small>
+        </div>
+      </div>
+  <div class="project-card" onclick="showPage('zamil-page')" >
+        <img src="zamil-image.jpg" alt="Project 4">
+        <div>
+          <h3 data-key="project-4-title">Zamil HVAC</h3>
+          <p data-key="project-4-desc">HVAC Installation and Service.</p>
+          <small data-key="project-4-date">2024–2025 </small>
+        </div>
+      </div>
+  <div class="project-card" onclick="showPage('nahdi-page')" >
+        <img src="nahdi-image.jpg" alt="Project 5">
+        <div>
+          <h3 data-key="project-5-title">Nahdi Project</h3>
+          <p data-key="project-5-desc">Renovation buildup</p>
+          <small data-key="project-5-date">2024–2025 </small>
+        </div>
+      </div>
+	  <div class="project-card" onclick="showPage('flag-page')" >
+        <img src="flag-image.jpg" alt="Project 6">
+        <div>
+          <h3 data-key="project-6-title">Flag Project</h3>
+          <p data-key="project-6-desc">Interior Renovation</p>
+          <small data-key="project-6-date">2024–2025 </small>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin:60px 0;">
+<a href="#contact"
+   class="project-cta-btn"
+   data-key="project-cta">
+   Start Your Project With Us
+</a>
+    </div>
+  </div>
+</section>
+<!-- PARTNERS-->
+<section class="partners-section" id="partners">
+  <div class="container">
+    <h2 class="section-title" data-key="partners-title">Our Partners</h2>
+    <div class="loop-slider-wrapper" id="partners">
+  <div class="loop-slider-track">
+<!-- ── First copy ── -->
+<div class="loop-slide"><img src="partner-image.jpg" alt="partner logo"></div>
+        <div class="loop-slide"><img src="partner1-image.jpg" alt="partner logo"></div>
+<!-- ── Second (duplicate) copy ── exactly the same as above -->
+<div class="loop-slide"><img src="partner-image.jpg" alt="partner logo"></div>
+        <div class="loop-slide"><img src="partner1-image.jpg" alt="partner logo"></div>
+  </div>
+</div>
+  </div>
+</section>
+<!-- CLIENTS -->
+<section class="client-section" id="clients">
+  <div class="container">
+    <h2 class="section-title" data-key="clients-title">Our Clients</h2>
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px;" data-key="clients-subtitle">"Entrusted by market leaders to deliver excellence at every stage."</p>
+    <div class="loop-slider-wrapper" id="clients">
+  <div class="loop-slider-track">
+<!-- ── First copy ── -->
+<div class="loop-slide"><img src="client-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client1-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client3-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client4-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client5-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client6-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client7-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client8-image.jpg" alt="Client Logo"></div>
+<!-- ── Second (duplicate) copy ── exactly the same as above -->
+<div class="loop-slide"><img src="client-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client1-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client3-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client4-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client5-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client6-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client7-image.jpg" alt="Client Logo"></div>
+<div class="loop-slide"><img src="client8-image.jpg" alt="Client Logo"></div>
+  </div>
+</div>
+  </div>
+</section>
+<!-- TEAM -->
+<!-- TEAM SECTION -->
+<section class="executive-management" id="team">
+  <div class="container">
+    <h2 class="section-title" data-key="team-title">Our Executive Leadership</h2>
+    <p class="section-subtitle" data-key="team-subtitle">
+      Meet the team driving innovation, quality, and Vision 2030-aligned excellence at Jazaaco Ventures
+    </p>
+    <div class="executive-grid">
+      <!-- CEO -->
+      <div class="executive-card">
+        <img src="ceo-image.jpg" alt="Javed Miyandad">
+        <h3>Javed Miyandad</h3>
+        <span data-key="team-ceo-position">Chief Executive Officer</span>
+      </div>
+      <!-- Board Member -->
+      <div class="executive-card">
+        <img src="member-image.jpg" alt="Mohammed J.K">
+        <h3>Mohammed J.K</h3>
+        <span data-key="team-board-position">Board Member</span>
+      </div>
+      <!-- Head of Purchase -->
+      <div class="executive-card">
+        <img src="member2-image.jpg" alt="Jalaluddin">
+        <h3>Jalaluddin</h3>
+        <span data-key="team-purchase-position">Head of Purchase</span>
+      </div>
+      <!-- Sales & Business Development Director -->
+      <div class="executive-card">
+        <img src="sales-image.jpg" alt="Abdul Razak">
+        <h3>Abdul Razak</h3>
+        <span data-key="team-sales-position">Sales & Business Development Director</span>
+      </div>
+      <!-- Head of Concrete Cooling -->
+      <div class="executive-card">
+        <img src="member1-image.jpg" alt="Jhonson Ouesph">
+        <h3>Jasim</h3>
+        <span data-key="team-concrete-position">Head of Concrete Cooling</span>
+      </div>
+      <!-- Accounts Manager -->
+      <div class="executive-card">
+        <img src="zaid-image.jpg" alt="Zaid Umair">
+        <h3>Zaid Umair</h3>
+        <span data-key="team-accounts-position">Buisness Development Manager</span>
+      </div>
+      <!-- Project Manager -->
+      <div class="executive-card">
+        <img src="member3-image.jpg" alt="Shaheer Mohammed">
+        <h3>Shaheer Mohammed</h3>
+        <span data-key="team-project-position">Project Manager</span>
+      </div>
+      <!-- Project Architect -->
+      <div class="executive-card">
+        <img src="member5-image.jpg" alt="Syed Mohammed Sami">
+        <h3>Syed Mohammed Sami</h3>
+        <span data-key="team-arch-position">Project Architect</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <p class="pre-title" data-key="contact-pretitle">Let's Talk</p>
+    <h2 class="section-title" data-key="contact-title">Have A Project In Mind? Contact Us</h2>
+    <form class="contact-form" action="/send" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" required data-key="contact-name" placeholder="Your Name">
+        <input type="email" name="email" required data-key="contact-email" placeholder="Email Address">
+      </div>
+      <div class="form-row">
+        <input type="text" name="phone" data-key="contact-phone" placeholder="Phone Number">
+      </div>
+      <textarea name="message" data-key="contact-message" placeholder="Your Message"></textarea>
+      <button type="submit" class="submit-btn" data-key="contact-submit">Send Message</button>
+    </form>
+    <div class="map-container">
+      <iframe class="map-frame" loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.7270831728476!2d39.21289731495406!3d21.543333084310657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDMyJzM2LjAiTiAzOcKwMTInNTUuNyJF!5e0!3m2!1sen!2ssa!4v1234567890123!5m2!1sen!2ssa"
+        allowfullscreen="">
+      </iframe>
+      <div class="contact-info">
+        <h4 data-key="contact-details">Contact Details</h4>
+        <p><strong data-key="contact-address-label">Address:</strong> <span data-key="contact-address">7393 Al Tadamun Al Arabi, Al-Rehab, Jeddah 23343</span></p>
+        <p><strong data-key="contact-phone-label">Phone:</strong> <span class="phone-number">+966 12 612 5560</span></p>
+        <p><strong data-key="contact-email-label">Email:</strong> Info@jazaaco.com</p>
+        <a class="map-btn" href="https://maps.google.com/?q=G6XG+2C+Jeddah" target="_blank" data-key="contact-map-btn">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<!-- DETAIL PAGES -->
+<!-- INDUSTRIAL PAGE -->
+<div id="industrial-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="industrial-title">Technical Specifications: Industrial Supply</h2>
+    <p data-key="industrial-intro">Our industrial supply division specializes in the procurement of high-pressure valves, heavy-duty gaskets, and specialized PPE for the Saudi oil and gas sector.</p>
+    <h3 data-key="industrial-cat-title">Core Product Categories</h3>
+    <ul>
+      <li data-key="industrial-cat-1"><strong>Safety Equipment:</strong> Hard hats, safety goggles, high-visibility vests, and fire-resistant clothing certified to international standards.</li>
+      <li data-key="industrial-cat-2"><strong>Power Tools:</strong> Industrial-grade drills, grinders, welding equipment from leading manufacturers like Bosch and DeWalt.</li>
+      <li data-key="industrial-cat-3"><strong>Fasteners & Hardware:</strong> Stainless steel bolts, nuts, washers, and anchors for marine and industrial environments.</li>
+      <li data-key="industrial-cat-4"><strong>Pumps & Valves:</strong> High-pressure hydraulic systems, gate valves, and control valves for petrochemical facilities.</li>
+      <li data-key="industrial-cat-5"><strong>Material Handling:</strong> Forklifts, pallet jacks, and lifting equipment with full maintenance support.</li>
+    </ul>
+    <img src="supply-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <img src="supply2-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <img src="supply3-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <img src="supply4-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <img src="supply5-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <img src="supply6-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <img src="supply7-image.jpg" alt="Industrial supply" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+  </div>
+</div>
+<!-- HVAC PAGE -->
+<div id="hvac-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="hvac-title">HVAC & MEP Technical Details</h2>
+    <div class="video-section">
+      <h3 data-key="hvac-video-title">Watch Our Cooling Solutions in Action</h3>
+      <video width="80%" controls autoplay muted loop>
+        <source src="hvac-video.mp4" type="video/mp4">
+        <span data-key="hvac-video-unsupported">Your browser does not support the video tag.</span>
+      </video>
+    </div>
+    <p data-key="hvac-intro">We provide design and maintenance for VRF systems and chilled water plants. Our MEP services include full electrical load calculations and firefighting system integration.</p>
+    <h3 data-key="hvac-systems-title">HVAC Systems Design</h3>
+    <ul>
+      <li data-key="hvac-sys-1"><strong>VRF Technology:</strong> Variable Refrigerant Flow systems for energy-efficient climate control in commercial buildings.</li>
+      <li data-key="hvac-sys-2"><strong>Central Cooling:</strong> Chilled water plants with centrifugal chillers ranging from 100 to 2000 TR capacity.</li>
+      <li data-key="hvac-sys-3"><strong>Air Distribution:</strong> Custom ductwork design using computational fluid dynamics for optimal airflow.</li>
+      <li data-key="hvac-sys-4"><strong>Building Automation:</strong> Smart HVAC controls integrated with BMS for real-time monitoring and optimization.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item">
+        <img src="hvac1-image.jpg" alt="hvac" class="square-img">
+        <div class="image-caption" data-key="hvac-img-1">Zamil Chiller</div>
+      </div>
+      <div class="image-item">
+        <img src="hvac2-image.jpg" alt="hvac" class="square-img">
+        <div class="image-caption" data-key="hvac-img-2">Trane Chiller</div>
+      </div>
+      <div class="image-item">
+        <img src="hvac3-image.jpg" alt="hvac" class="square-img">
+        <div class="image-caption" data-key="hvac-img-3">Carrier Chiller</div>
+      </div>
+  </div>
+ <h3 data-key="mep-title">MEP Engineering Services</h3>
+    <ul>
+      <li data-key="mep-1"><strong>Mechanical System Installations:</strong> Air Conditioning Ventilation, All kinds of HVAC systems, Air Filtration & Treatment, Refrigeration and Cold Stores, Pumps Installations, Compressed Air Systems, Chilled Water Piping.</li>
+      <li data-key="mep-2"><strong>Electrical System Installations:</strong> Power distribution, building management, low current systems, switchgears, lighting, and MV/LV control solutions—all in one efficient package.</li>
+      <li data-key="mep-3"><strong>Plumbing and Drainage system:</strong> We specialize in cold and hot water piping, water storage tanks, water cooling systems, pumps and pumping stations, drainage and rainwater piping, and central water heater systems.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item">
+        <img src="mechanical-image.jpg" alt="mechanical" class="square-img">
+        <div class="image-caption" data-key="mep-img-1">Mechanical</div>
+      </div>
+      <div class="image-item">
+        <img src="electrical-image.jpg" alt="Electrical" class="square-img">
+        <div class="image-caption" data-key="mep-img-2">Electrical</div>
+      </div>
+      <div class="image-item">
+        <img src="plumbing-image.jpg" alt="plumbing" class="square-img">
+        <div class="image-caption" data-key="mep-img-3">Plumbing</div>
+      </div>
+    </div>
+    <h3 data-key="hvac-maintenance-title">Preventive Maintenance Programs</h3>
+    <p data-key="hvac-maintenance-desc">Our maintenance packages include quarterly inspections, filter replacements, refrigerant charging, and detailed performance reports to ensure system longevity.</p>
+  </div>
+</div>
+<!-- COOLING PAGE -->
+<div id="cooling-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <div class="video-section">
+      <h3 data-key="cooling-video-title">Watch Our Cooling Solutions in Action</h3>
+      <video width="80%" controls autoplay muted loop>
+        <source src="cooling-video.mp4" type="video/mp4">
+        <span data-key="cooling-video-unsupported">Your browser does not support the video tag.</span>
+      </video>
+    </div>
+    <h2 class="section-title" data-key="cooling-title">Concrete Cooling Solutions</h2>
+    <p data-key="cooling-intro">Jazaaco our partner established in the year 1996, we are leading organization engaged in Design, manufacturing, exporting and supplying wide range of products like Flake Ice Plant, Tube Ice Plant, Chilled water plant, and more.</p>
+    <h3 data-key="cooling-tech-title">Cooling Technologies</h3>
+    <ul>
+      <li data-key="cooling-tech-1"><strong>Flake Ice Plants:</strong> Production capacity from 5 to 100 tons per day, delivering ice at -7°C for rapid concrete temperature reduction.</li>
+      <li data-key="cooling-tech-2"><strong>Chilled Water Systems:</strong> Closed-loop cooling with plate heat exchangers to maintain precise concrete mixing temperatures.</li>
+      <li data-key="cooling-tech-3"><strong>Tube Ice Plant:</strong> A specialized facility that produces clear, cylindrical ice with a hole in the middle by freezing water inside vertical stainless steel tubes.</li>
+  <li data-key="cooling-tech-4"><strong>Automatic Ice Handling:</strong> A mechanized system of screw conveyors, belts, and pneumatic blowers that moves ice from production to storage or bagging without manual labor.</li>
+      <li data-key="cooling-tech-5"><strong>Ice Storage Room:</strong> An insulated, refrigerated space designed to hold large quantities of ice at sub-zero temperatures to prevent melting and clumping.</li>
+      <li data-key="cooling-tech-6"><strong>Air Cooling System:</strong> A network of fans and evaporators that circulates chilled air to maintain a stable environment and prevent heat gain within the facility.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item">
+        <img src="tube.jpg" alt="Tube Ice" class="square-img">
+        <div class="image-caption" data-key="cooling-img-1">Tube Ice Plant</div>
+      </div>
+      <div class="image-item">
+        <img src="flake-ice.jpg" alt="Flake Ice" class="square-img">
+        <div class="image-caption" data-key="cooling-img-2">Flake Ice Plant</div>
+      </div>
+      <div class="image-item">
+        <img src="chilled-water.jpg" alt="Chilled Water" class="square-img">
+        <div class="image-caption" data-key="cooling-img-3">Chilled Water System</div>
+      </div>
+   <div class="image-item">
+        <img src="automstic-image.jpg" alt="automatic ice handling" class="square-img">
+        <div class="image-caption" data-key="cooling-img-4">Automatic Ice Handling</div>
+      </div>
+      <div class="image-item">
+        <img src="automatic1-image.jpg" alt="automatic1" class="square-img">
+        <div class="image-caption" data-key="cooling-img-5">Automatic ice handling parts</div>
+      </div>
+    </div>
+ <h3 data-key="cooling-specs-title">Technical Specifications</h3>
+    <p data-key="cooling-specs-desc">Our systems are designed to handle mass concrete pours for foundations, dams, and high-rise structures. We provide on-site temperature monitoring with real-time data logging to ensure compliance with ACI 305 standards for hot weather concreting.</p>
+    <h3 data-key="cooling-apps-title">Project Applications</h3>
+    <ul>
+      <li data-key="cooling-app-1">Foundation pours for NEOM and Red Sea Project developments</li>
+      <li data-key="cooling-app-2">Bridge deck cooling for Jeddah coastal infrastructure</li>
+      <li data-key="cooling-app-3">Mass concrete pours for industrial facilities and power plants</li>
+      <li data-key="cooling-app-4">Precast concrete production temperature control</li>
+    </ul>
+  </div>
+</div>
+<!-- SUSTAINABILITY PAGE -->
+<div id="sustainability-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="sustainability-title">Sustainability & Energy Efficiency</h2>
+    <div class="video-section">
+      <h3 data-key="sustainability-video-title">Watch Our Sustainability in Architecture</h3>
+      <video width="80%" controls autoplay muted loop>
+        <source src="Sustainability-video.mp4" type="video/mp4">
+        <span data-key="sustainability-video-unsupported">Your browser does not support the video tag.</span>
+      </video>
+    </div>
+    <p data-key="sustainability-intro">We create buildings that are energy-efficient, eco-friendly, and future-ready. Our designs reduce carbon footprint, integrate renewable energy, and enhance human well-being.</p>
+<h3 data-key="sustainability-green-title">Green Building Solutions</h3>
+    <ul>
+      <li data-key="sustainability-green-1"><strong>LED Lighting Retrofits:</strong> Conversion to high-efficiency LED systems with motion sensors, reducing energy consumption by up to 70%.</li>
+      <li data-key="sustainability-green-2"><strong>Solar Integration:</strong> Hybrid HVAC systems incorporating solar thermal collectors for pre-heating and cooling applications.</li>
+      <li data-key="sustainability-green-3"><strong>Variable Speed Drives:</strong> Installation of VFDs on pumps and fans to optimize energy usage based on real-time demand.</li>
+      <li data-key="sustainability-green-4"><strong>Heat Recovery Systems:</strong> Capturing waste heat from chillers and compressors for domestic hot water production.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item"><img src="sustainable1-image.jpg" alt="sustainable" class="square-img"></div>
+      <div class="image-item"><img src="sustainable2-image.jpg" alt="sustainable" class="square-img"></div>
+      <div class="image-item"><img src="sustainable3-image.jpg" alt="sustainable" class="square-img"></div>
+      <div class="image-item"><img src="sustainable4-image.jpg" alt="sustainable" class="square-img"></div>
+    </div>
+ <h3 data-key="sustainability-impact-title">Environmental Impact Reduction</h3>
+    <ul>
+      <li data-key="sustainability-impact-1">Implementation of R-32 and R-410A refrigerants with lower global warming potential</li>
+      <li data-key="sustainability-impact-2">Water conservation through greywater recycling systems in MEP installations</li>
+      <li data-key="sustainability-impact-3">Thermal insulation upgrades to reduce HVAC loads and energy waste</li>
+      <li data-key="sustainability-impact-4">Smart metering and energy management systems for continuous optimization</li>
+    </ul>
+    <h3 data-key="sustainability-vision-title">Vision 2030 Alignment</h3>
+    <p data-key="sustainability-vision-desc">Our sustainability initiatives support Saudi Arabia's commitment to renewable energy and carbon neutrality. We provide detailed carbon footprint assessments and ROI analysis for all energy efficiency projects.</p>
+  </div>
+</div>
+<!-- INTERNAL ARCHITECTURE PAGE -->
+<div id="internal-architecture-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="internal-arch-title">Technical Specifications: Internal Architecture</h2>
+    <p data-key="internal-arch-intro">Our internal architecture solutions focus on intelligent space planning, high-quality finishes, and seamless integration of architectural and MEP systems.</p>
+    <h3 data-key="internal-arch-scope-title">Scope of Work</h3>
+    <ul>
+      <li data-key="internal-arch-scope-1"><strong>Space Planning:</strong> Efficient layouts optimizing workflow, safety, and comfort.</li>
+      <li data-key="internal-arch-scope-2"><strong>Partition Systems:</strong> Gypsum, glass, aluminum, and modular partitions.</li>
+      <li data-key="internal-arch-scope-3"><strong>Ceiling Systems:</strong> Gypsum, mineral fiber, metal, and acoustic ceilings.</li>
+      <li data-key="internal-arch-scope-4"><strong>Flooring Solutions:</strong> Epoxy, vinyl, marble, ceramic tiles, and raised floors.</li>
+  <li data-key="internal-arch-scope-5"><strong>Joinery & Woodwork:</strong> Custom doors, cabinets, wall panels, and reception desks.</li>
+    </ul>
+ <div class="image-row">
+      <div class="image-item">
+        <img src="sustainable1-image.jpg" alt="sustainable" class="square-img">
+      </div>
+      <div class="image-item">
+        <img src="sustainable2-image.jpg" alt="sustainable" class="square-img">
+      </div>
+      <div class="image-item">
+        <img src="sustainable3-image.jpg" alt="sustainable" class="square-img">
+      </div>
+      <div class="image-item">
+        <img src="sustainable4-image.jpg" alt="sustainable" class="square-img">
+      </div>
+    </div>
+    <h3 data-key="internal-arch-design-title">Design & Compliance</h3>
+    <p data-key="internal-arch-design-desc">All designs comply with Saudi Building Codes, Civil Defense regulations, and international architectural standards, ensuring safety and durability.</p>
+    <h3 data-key="internal-arch-execution-title">Execution & Finishing</h3>
+    <p data-key="internal-arch-execution-desc">Our skilled execution teams ensure precise installation, premium finishing, and timely delivery with strict quality control at every stage.</p>
+  </div>
+</div>
+<!-- TELECOM PAGE -->
+<div id="telecom-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="telecom-title">Telecommunications Infrastructure Solutions</h2>
+    <p data-key="telecom-intro">Comprehensive telecommunications infrastructure services including fiber optic installation, network design, and ongoing maintenance for industrial and commercial facilities across Saudi Arabia.</p>
+ <h3 data-key="telecom-fiber-title">Fiber Optic Solutions</h3>
+    <ul>
+      <li data-key="telecom-fiber-1"><strong>Fiber Installation:</strong> Single-mode and multi-mode fiber optic cable installation for high-speed data transmission.</li>
+      <li data-key="telecom-fiber-2"><strong>Splicing & Testing:</strong> Fusion splicing services with OTDR testing to ensure optimal signal quality.</li>
+      <li data-key="telecom-fiber-3"><strong>Structured Cabling:</strong> Category 6A and fiber backbone systems for enterprise networks.</li>
+      <li data-key="telecom-fiber-4"><strong>Outside Plant:</strong> Underground and aerial fiber deployment for campus and industrial park connectivity.</li>
+    </ul>
+    <img src="telecom.jpg" alt="telecom" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+<h3 data-key="telecom-network-title">Network Infrastructure</h3>
+    <ul>
+      <li data-key="telecom-network-1"><strong>Data Centers:</strong> Rack installation, cable management, and power distribution for server rooms.</li>
+      <li data-key="telecom-network-2"><strong>Wireless Systems:</strong> WiFi access point installation and radio frequency optimization.</li>
+      <li data-key="telecom-network-3"><strong>Security Systems:</strong> IP camera networks and access control system integration.</li>
+      <li data-key="telecom-network-4"><strong>Emergency Communications:</strong> Two-way radio systems and emergency notification infrastructure.</li>
+    </ul>
+    <h3 data-key="telecom-support-title">Maintenance & Support</h3>
+    <p data-key="telecom-support-desc">24/7 technical support with rapid response teams for network troubleshooting, fiber repair, and system upgrades. We maintain comprehensive documentation and as-built drawings for all installations.</p>
+  </div>
+</div>
+<!-- MANPOWER PAGE -->
+<div id="manpower-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="manpower-title">Professional Manpower Supply Services</h2>
+    <p data-key="manpower-intro">Reliable supply of skilled and unskilled labor for industrial, construction, and maintenance projects.</p>
+    <div class="image-row">
+      <div class="image-item"><img src="manpower1-image.jpg" alt="manpower" class="square-img"></div>
+      <div class="image-item"><img src="manpower2-image.jpg" alt="manpower" class="square-img"></div>
+      <div class="image-item"><img src="manpower3-image.jpg" alt="manpower" class="square-img"></div>
+    </div>
+    <h3 data-key="manpower-unskilled-title">Unskilled Labor Services</h3>
+    <ul>
+      <li data-key="manpower-unskilled-1">General construction workers for civil and building projects</li>
+      <li data-key="manpower-unskilled-2">Material handlers and warehouse personnel</li>
+      <li data-key="manpower-unskilled-3">Cleaning and janitorial staff for industrial facilities</li>
+      <li data-key="manpower-unskilled-4">Site security and access control personnel</li>
+    </ul>
+    <h3 data-key="manpower-compliance-title">Compliance & Safety</h3>
+ 
+    <ul>
+      <li data-key="manpower-compliance-1">All personnel undergo comprehensive safety training and certification</li>
+      <li data-key="manpower-compliance-2">Full compliance with Saudi labor laws and GOSI regulations</li>
+      <li data-key="manpower-compliance-3">Regular health screenings and medical fitness certifications</li>
+      <li data-key="manpower-compliance-4">Documentation management including work permits and iqama processing</li>
+    </ul>
+    <h3 data-key="manpower-management-title">Workforce Management</h3>
+    <p data-key="manpower-management-desc">We provide complete workforce solutions including recruitment, onboarding, payroll management, and performance monitoring. Our team ensures all workers are properly equipped, trained, and supervised to maintain the highest standards of safety and productivity.</p>
+  </div>
+</div>
+<!-- RENTALS PAGE -->
+<div id="rentals-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="rentals-title">Equipment Rental Services</h2>
+    <p data-key="rentals-intro">Comprehensive heavy machinery and specialized equipment rental solutions for construction, oil & gas, and industrial projects throughout Saudi Arabia.</p>
+    <h3 data-key="rentals-heavy-title">Heavy Machinery</h3>
+    <ul>
+      <li data-key="rentals-heavy-1"><strong>Excavators & Loaders:</strong> Hydraulic excavators from 5 to 50 tons, wheel loaders, and backhoe loaders.</li>
+      <li data-key="rentals-heavy-2"><strong>Cranes & Lifting:</strong> Mobile cranes, tower cranes, and material hoists with certified operators.</li>
+      <li data-key="rentals-heavy-3"><strong>Earthmoving Equipment:</strong> Bulldozers, graders, and compaction equipment for site preparation.</li>
+      <li data-key="rentals-heavy-4"><strong>Material Handling:</strong> Forklifts, telehandlers, and aerial work platforms.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item">
+        <img src="rental1-image.jpg" alt="rental equipment" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+        <div class="image-caption" data-key="rentals-img-1">Heavy Machinery</div>
+      </div>
+    
+    </div>
+    <h3 data-key="rentals-specialized-title">Specialized Equipment</h3>
+    <ul>
+      <li data-key="rentals-specialized-1"><strong>Welding & Cutting:</strong> Industrial welding machines, plasma cutters, and gas cutting equipment.</li>
+      <li data-key="rentals-specialized-2"><strong>Power Generation:</strong> Diesel generators from 20 kVA to 2000 kVA capacity.</li>
+      <li data-key="rentals-specialized-3"><strong>Pumping Systems:</strong> Dewatering pumps, concrete pumps, and chemical transfer pumps.</li>
+      <li data-key="rentals-specialized-4"><strong>Compressors:</strong> Air compressors for pneumatic tools and sandblasting operations.</li>
+    </ul>
+    <h3 data-key="rentals-terms-title">Rental Terms & Support</h3>
+    <p data-key="rentals-terms-desc">Flexible rental periods from daily to long-term contracts. All equipment is regularly maintained and inspected for safety compliance. We provide on-site technical support, spare parts, and emergency breakdown services to minimize downtime.</p>
+  </div>
+</div>
+<!-- CONSTRUCTION PAGE -->
+<div id="construction-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="construction-title">General Contracting & Civil Works</h2>
+    <p data-key="construction-intro">End-to-end construction management and civil engineering services for commercial, industrial, and infrastructure projects across the Kingdom of Saudi Arabia.</p>
+    <h3 data-key="construction-services-title">Core Services</h3>
+    <ul>
+      <li data-key="construction-services-1"><strong>Building Construction:</strong> Commercial buildings, warehouses, and industrial facilities from foundation to handover.</li>
+      <li data-key="construction-services-2"><strong>Civil Works:</strong> Site grading, earthworks, concrete works, and underground utilities.</li>
+      <li data-key="construction-services-3"><strong>Infrastructure:</strong> Roads, drainage systems, water networks, and sewage treatment facilities.</li>
+      <li data-key="construction-services-4"><strong>Renovation & Retrofitting:</strong> Modernization of existing structures and facility upgrades.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item">
+        <img src="construction1-image.jpg" alt="construction" class="square-img">
+        <div class="image-caption" data-key="construction-img-1">Site Development</div>
+      </div>
+      <div class="image-item">
+        <img src="construction2-image.jpg" alt="construction" class="square-img">
+        <div class="image-caption" data-key="construction-img-2">Building Construction</div>
+      </div>
+      <div class="image-item">
+        <img src="construction3-image.jpg" alt="construction" class="square-img">
+        <div class="image-caption" data-key="construction-img-3">Infrastructure</div>
+      </div>
+    </div>
+    <h3 data-key="construction-management-title">Project Management</h3>
+    <ul>
+      <li data-key="construction-management-1">Detailed project planning and scheduling using Primavera and MS Project</li>
+      <li data-key="construction-management-2">Quality assurance and quality control throughout all phases</li>
+      <li data-key="construction-management-3">Health, safety, and environment (HSE) management systems</li>
+      <li data-key="construction-management-4">Regular progress reporting and stakeholder communication</li>
+    </ul>
+    <h3 data-key="construction-compliance-title">Compliance & Standards</h3>
+    <p data-key="construction-compliance-desc">All projects are executed in full compliance with Saudi Building Code (SBC), Civil Defense requirements, and international construction standards. We maintain comprehensive quality documentation and provide warranty support for completed works.</p>
+  </div>
+</div>
+<!-- FABRICATION PAGE -->
+<div id="fabrication-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="fabrication-title">Steel Fabrication & Metalwork Services</h2>
+    <p data-key="fabrication-intro">State-of-the-art fabrication facility providing custom steel structures, pipe spools, and precision metalwork for industrial and commercial applications.</p>
+    <h3 data-key="fabrication-structural-title">Structural Steel Fabrication</h3>
+    <ul>
+      <li data-key="fabrication-structural-1"><strong>Steel Structures:</strong> Custom fabrication of beams, columns, trusses, and frames for buildings and industrial facilities.</li>
+      <li data-key="fabrication-structural-2"><strong>Pipe Spools:</strong> Pre-fabricated piping assemblies for oil & gas, petrochemical, and water treatment plants.</li>
+      <li data-key="fabrication-structural3"><strong>Platforms & Walkways:</strong> Industrial access platforms, mezzanines, and safety walkways with grating and handrails.</li>
+      <li data-key="fabrication-structural-4"><strong>Storage Tanks:</strong> Fabrication of water tanks, fuel tanks, and process vessels to ASME standards.</li>
+    </ul>
+    <div class="image-row">
+      <div class="image-item">
+        <img src="fabrication1-image.jpg" alt="Steel Structures Fabrication" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+        <div class="image-caption" data-key="fabrication-img-1">Steel Structures</div>
+      </div>
+    </div>
+    <h3 data-key="fabrication-capabilities-title">Manufacturing Capabilities</h3>
+    <ul>
+      <li data-key="fabrication-capabilities-1"><strong>Cutting:</strong> CNC plasma and oxy-fuel cutting for plates up to 100mm thickness.</li>
+      <li data-key="fabrication-capabilities-2"><strong>Bending & Rolling:</strong> Hydraulic press brakes and plate rolling machines for complex geometries.</li>
+      <li data-key="fabrication-capabilities-3"><strong>Welding:</strong> SMAW, GMAW, GTAW, and SAW processes with certified welders to ASME IX and AWS D1.1.</li>
+      <li data-key="fabrication-capabilities-4"><strong>Surface Treatment:</strong> Sandblasting, painting, and galvanizing for corrosion protection.</li>
+    </ul>
+    <h3 data-key="fabrication-quality-title">Quality Assurance</h3>
+    <p data-key="fabrication-quality-desc">All fabrication work undergoes rigorous inspection including dimensional checks, NDT testing (RT, UT, MT, PT), and material certification. We maintain full traceability documentation and provide as-built drawings for all delivered components.</p>
+  </div>
+</div>
+<!-- FIRE SAFETY PAGE -->
+<div id="fire-safety-serv-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <h2 class="section-title" data-key="fire-safety-title">Fire Protection & Safety Systems</h2>
+    <p data-key="fire-safety-intro">Comprehensive fire protection solutions including system design, installation, testing, and maintenance for commercial, industrial, and residential facilities throughout Saudi Arabia.</p>
+    <h3 data-key="fire-suppression-title">Fire Suppression Systems</h3>
+    <ul>
+      <li data-key="fire-suppression-1"><strong>Sprinkler Systems:</strong> Wet, dry, pre-action, and deluge sprinkler systems designed to NFPA 13 standards.</li>
+      <li data-key="fire-suppression-2"><strong>FM-200 Systems:</strong> Clean agent fire suppression for server rooms, control rooms, and sensitive equipment.</li>
+      <li data-key="fire-suppression-3"><strong>Foam Systems:</strong> High-expansion and low-expansion foam systems for hazardous material storage.</li>
+      <li data-key="fire-suppression-4"><strong>CO2 Systems:</strong> Carbon dioxide suppression for industrial applications and electrical rooms.</li>
+    </ul>
+   
+    <!-- IMAGE GRID -->
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="fire1-image.jpg" alt="Sprinkler Systems">
+        <h4 data-key="fire-img-1">Sprinkler Systems</h4>
+      </div>
+      <div class="product-card">
+        <img src="fire2-image.jpg" alt="Fire Detection Systems">
+        <h4 data-key="fire-img-2">Detection Systems</h4>
+      </div>
+      <div class="product-card">
+        <img src="fire3-image.jpg" alt="Fire Safety Equipment">
+        <h4 data-key="fire-img-3">Safety Equipment</h4>
+      </div>
+    </div>
+    <h3 data-key="fire-detection-title">Fire Detection & Alarm</h3>
+    <ul>
+      <li data-key="fire-detection-1"><strong>Addressable Systems:</strong> Intelligent fire alarm panels with individual device identification and fault monitoring.</li>
+      <li data-key="fire-detection-2"><strong>Smoke & Heat Detectors:</strong> Optical, ionization, and multi-sensor detectors for early warning.</li>
+      <li data-key="fire-detection-3"><strong>Manual Call Points:</strong> Break glass alarm activation stations strategically located throughout facilities.</li>
+      <li data-key="fire-detection-4"><strong>Voice Evacuation:</strong> Emergency communication systems for orderly evacuation procedures.</li>
+    </ul>
+    <h3 data-key="fire-safety-equipment-title">Safety Equipment Supply</h3>
+    <ul>
+      <li data-key="fire-safety-equipment-1">Portable fire extinguishers (CO2, DCP, foam, water) with wall mounting and signage</li>
+      <li data-key="fire-safety-equipment-2">Fire hose reels and cabinets with compliant pressure ratings</li>
+      <li data-key="fire-safety-equipment-3">Emergency lighting and exit signs with battery backup</li>
+      <li data-key="fire-safety-equipment-4">Fire blankets, first aid stations, and emergency equipment</li>
+    </ul>
+    <h3 data-key="fire-compliance-title">Compliance & Certification</h3>
+    <p data-key="fire-compliance-desc">All installations comply with Saudi Civil Defense regulations, NFPA codes, and international fire safety standards. We provide comprehensive testing, commissioning, and annual maintenance services with detailed documentation and certification.</p>
+  </div>
+</div>
+<!-- Careers PAGE -->
+<div id="careers-page" class="page-content">
+  <div class="tech-detail-container">
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <div class="jobs-container">
+      <h1 data-key="career-heading">Join Our Team</h1>
+      <p data-key="career-introtext">
+        We are looking for passionate and ambitious talents who want to work with a team of experts and professionals.
+      </p>
+      <form id="jobForm">
+        <!-- Row 1: First Name + Last Name -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName" data-key="label_first_name">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              name="first_name"
+              placeholder="Enter your first name"
+              required
+              data-key="input_first_name"
+            >
+          </div>
+          <div class="form-group">
+            <label for="lastName" data-key="label_last_name">Last Name *</label>
+            <input
+              type="text"
+              id="lastName"
+              name="last_name"
+              placeholder="Enter your last name"
+              required
+              data-key="input_last_name"
+            >
+          </div>
+        </div>
+        <!-- Row 2: Contact Number + Email -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone" data-key="label_phone">Contact Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="contact_number"
+              placeholder="Enter your phone number"
+              required
+              data-key="input_phone"
+            >
+          </div>
+          <div class="form-group">
+            <label for="email" data-key="label_email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              data-key="input_email"
+            >
+          </div>
+        </div>
+        <!-- Location (full width) -->
+        <div class="form-group">
+          <label for="location" data-key="label_location">Location *</label>
+          <select id="location" name="location" required>
+            <option value="" data-key="option_select_location">Select Your Location</option>
+            <option value="Riyadh" data-key="option_riyadh">Riyadh</option>
+            <option value="Jeddah">Jeddah</option>
+            <option value="Mecca" selected data-key="option_mecca">Mecca</option>
+            <option value="Dammam">Dammam</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <!-- Previous Job / Experience description -->
+        <div class="form-group">
+          <label for="prevJob" data-key="label_prev_job">Previous / Current Job</label>
+          <textarea
+            id="prevJob"
+            name="previous_job"
+            rows="4"
+            placeholder="Brief description of your current or most recent job..."
+            data-key="textarea_prev_job"
+          ></textarea>
+        </div>
+        <!-- CV Upload -->
+        <!-- CV Upload - Styled like submit button -->
+        <div class="form-group">
+          <label for="cvUpload" data-key="label_cv">Upload CV (PDF only, max 5MB)</label>
+          <div class="custom-file-upload">
+            <input
+              type="file"
+              id="cvUpload"
+              name="cv_file"
+              accept=".pdf"
+              data-key="input_cv"
+            >
+            <label for="cvUpload" class="file-btn">
+              <i class="fas fa-upload"></i> Choose CV File
+            </label>
+            <span id="file-name" class="file-name-display">No file chosen</span>
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" data-key="button_submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS PAGES -->
+<div id="almarai-page" class="page-content">   <!-- keep your id -->
+  <div class="tech-detail-container">          <!-- ← use this class everywhere -->
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button> 	
+
+    <!-- Swiper Image Slider (exactly like the example you shared) -->
+    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden project-swiper">
+      <div class="swiper-wrapper" id="marjan-swiper-wrapper">
+
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/4">
+          <img src="almarai-image.jpg" 
+               alt="almarai">
+        </div>
+
+        <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="almarai1-image.jpg" 
+               alt="almarai">
+        </div>
+
+        <div class="swiper-slide" role="group" aria-label="3/4">
+          <img src="almarai2-image.jpg" 
+               alt="almarai">
+        </div>
+
+
+      </div>
+
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+
+      <!-- Pagination bullets -->
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+    </div>
+
+    <!-- Project Information (adapted from your provided HTML) -->
+    <div class="project-info">
+      <h1><b>Almarai Regional Office</b></h1>
+      <p>Almarai  regional office renovation</p>
+
+      <div class="project-meta">
+        <p><strong data-key="client-label">Client:</strong> Almarai</p>
+        <p><strong data-key="status-label">Status:</strong> Completed</p>
+        <p><strong data-key="scope-label">Scope:</strong> Sucessfully renovated the reigonal of office of almarai.</p>
+      </div>
+
+      <!-- Optional: You can add more sections like your manpower one had -->
+      <!-- <h3>Key Highlights</h3>
+      <ul>
+        <li>Prefabricated modular buildings for rapid deployment</li>
+        <li>Complete utility infrastructure (water, sewage, fire protection)</li>
+        <li>Site development including roads, parking & fencing</li>
+      </ul> -->
+    </div>
+
+  </div>
+</div>
+
+<div id="acino-page" class="page-content"> <!-- keep your id -->
+  <div class="tech-detail-container"> <!-- ← use this class everywhere -->
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <!-- Swiper Image Slider (exactly like the example you shared) -->
+    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden project-swiper">
+      <div class="swiper-wrapper" id="marjan-swiper-wrapper">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/4">
+          <img src="acino1-image.jpg"
+               alt="acino">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="acino2-image.jpg"
+               alt="acino">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="3/4">
+          <img src="acino3-image.jpg"
+               alt="acino">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="4/4">
+          <img src="acino4-image.jpg"
+               alt="acino">
+        </div>
+      </div>
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <!-- Pagination bullets -->
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+    </div>
+    <!-- Project Information (adapted from your provided HTML) -->
+    <div class="project-info">
+      <h1><b>Acino Interior desgin and renovation</b></h1>
+      <p>Designed and renovated the entire office</p>
+      <div class="project-meta">
+        <p><strong data-key="client-label">Client:</strong> Acino </p>
+        <p><strong data-key="status-label">Status:</strong> Completed</p>
+        <p><strong data-key="scope-label">Scope:</strong> Complete renovation of the office with our interior designs and prodction.</p>
+      </div>
+      <!-- Optional: You can add more sections like your manpower one had -->
+      <!-- <h3>Key Highlights</h3>
+      <ul>
+        <li>Prefabricated modular buildings for rapid deployment</li>
+        <li>Complete utility infrastructure (water, sewage, fire protection)</li>
+        <li>Site development including roads, parking & fencing</li>
+      </ul> -->
+    </div>
+  </div>
+</div>
+<div id="booths-page" class="page-content"> <!-- keep your id -->
+  <div class="tech-detail-container"> <!-- ← use this class everywhere -->
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <!-- Swiper Image Slider (exactly like the example you shared) -->
+    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden project-swiper">
+      <div class="swiper-wrapper" id="marjan-swiper-wrapper">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/4">
+          <img src="booth-image.jpg"
+               alt="booth">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="booth1-image.jpg"
+               alt="booth">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="3/4">
+          <img src="booth2-image.jpg"
+               alt="booth">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="4/4">
+          <img src="booth3-image.jpg"
+               alt="booth">
+        </div>
+      </div>
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <!-- Pagination bullets -->
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+    </div>
+    <!-- Project Information (adapted from your provided HTML) -->
+    <div class="project-info">
+      <h1><b>Booths for Malls/Events</b></h1>
+      <p>Constructed portable booths which are used in malls and events</p>
+      <div class="project-meta">
+        <p><strong data-key="client-label">Client:</strong> Malls and Event Organizers</p>
+        <p><strong data-key="status-label">Status:</strong> Completed</p>
+        <p><strong data-key="scope-label">Scope:</strong> Delivered required booths and fitouts to the malls and event organizers.</p>
+      </div>
+      <!-- Optional: You can add more sections like your manpower one had -->
+      <!-- <h3>Key Highlights</h3>
+      <ul>
+        <li>Prefabricated modular buildings for rapid deployment</li>
+        <li>Complete utility infrastructure (water, sewage, fire protection)</li>
+        <li>Site development including roads, parking & fencing</li>
+      </ul> -->
+    </div>
+  </div>
+</div>
+<div id="zamil-page" class="page-content"> <!-- keep your id -->
+  <div class="tech-detail-container"> <!-- ← use this class everywhere -->
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <!-- Swiper Image Slider (exactly like the example you shared) -->
+    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden project-swiper">
+      <div class="swiper-wrapper" id="marjan-swiper-wrapper">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/4">
+          <img src="hvac4-image.jpg"
+               alt="hvac">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="hvac5-image.jpg"
+               alt="hvac">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="3/4">
+          <img src="hvac6-image.jpg"
+               alt="hvac">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="4/4">
+          <img src="hvac7-image.jpg"
+               alt="hvac">
+        </div>
+      </div>
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <!-- Pagination bullets -->
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+    </div>
+    <!-- Project Information (adapted from your provided HTML) -->
+    <div class="project-info">
+      <h1><b>Zamil HVAC Project</b></h1>
+      <p>Installation and maintenance of hvac</p>
+      <div class="project-meta">
+        <p><strong data-key="client-label">Client:</strong> Zamil</p>
+        <p><strong data-key="status-label">Status:</strong> Completed</p>
+        <p><strong data-key="scope-label">Scope:</strong>Installed the HVAC systems and maintened them as required by client.</p>
+      </div>
+      <!-- Optional: You can add more sections like your manpower one had -->
+      <!-- <h3>Key Highlights</h3>
+      <ul>
+        <li>Prefabricated modular buildings for rapid deployment</li>
+        <li>Complete utility infrastructure (water, sewage, fire protection)</li>
+        <li>Site development including roads, parking & fencing</li>
+      </ul> -->
+    </div>
+  </div>
+</div>
+<div id="nahdi-page" class="page-content"> <!-- keep your id -->
+  <div class="tech-detail-container"> <!-- ← use this class everywhere -->
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <!-- Swiper Image Slider (exactly like the example you shared) -->
+    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden project-swiper">
+      <div class="swiper-wrapper" id="marjan-swiper-wrapper">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/4">
+          <img src="nahdi1-image.jpg"
+               alt="nahdi">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="nahdi2-image.jpg"
+               alt="nahdi">
+        </div>
+      </div>
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <!-- Pagination bullets -->
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+    </div>
+    <!-- Project Information (adapted from your provided HTML) -->
+    <div class="project-info">
+      <h1><b data-key= "nahdih">Nahdi Pharmacy</b></h1>
+      <p data-key="nahdip">Complete renovation of the pharmacy exterior.</p>
+      <div class="project-meta">
+        <p><strong data-key="client-label">Client:</strong> <span data-key="nahdi-c">Nahdi</span></p>
+        <p><strong data-key="status-label">Status:</strong> <span data-key= "completed">Completed</span></p>
+        <p><strong data-key="scope-label">Scope:</strong> <span data-key="nahdi-s">Restored and renovated complete pharmacy.</span></p>
+      </div>
+      <!-- Optional: You can add more sections like your manpower one had -->
+      <!-- <h3>Key Highlights</h3>
+      <ul>
+        <li>Prefabricated modular buildings for rapid deployment</li>
+        <li>Complete utility infrastructure (water, sewage, fire protection)</li>
+        <li>Site development including roads, parking & fencing</li>
+      </ul> -->
+    </div>
+  </div>
+</div>
+
+
+<div id="flag-page" class="page-content"> <!-- keep your id -->
+  <div class="tech-detail-container"> <!-- ← use this class everywhere -->
+    <button onclick="showPage('main-site-content')" class="back-btn" data-key="back-btn">← Back</button>
+    <!-- Swiper Image Slider (exactly like the example you shared) -->
+    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl swiper-backface-hidden project-swiper">
+      <div class="swiper-wrapper" id="marjan-swiper-wrapper">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/4">
+          <img src="flag1-image.jpg"
+               alt="flag">
+        </div>
+        <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="flag2-image.jpg"
+               alt="flag">
+        </div>
+		 <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="flag3-image.jpg"
+               alt="flag">
+        </div>
+		 <div class="swiper-slide" role="group" aria-label="2/4">
+          <img src="flag4-image.jpg"
+               alt="flag">
+        </div>
+      </div>
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+      <!-- Pagination bullets -->
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+    </div>
+    <!-- Project Information (adapted from your provided HTML) -->
+    <div class="project-info">
+      <h1><b data-key= "flag">Flag Company</b></h1>
+      <p data-key="flagp">Renovated the entire office with our interior productions.</p>
+      <div class="project-meta">
+        <p><strong data-key="client-label">Client:</strong> <span data-key="flag-c">Flag Company</span></p>
+        <p><strong data-key="status-label">Status:</strong> <span data-key= "completed">Completed</span></p>
+        <p><strong data-key="scope-label">Scope:</strong> <span data-key="flag-s">Complete Renovation of the office.</span></p>
+      </div>
+      <!-- Optional: You can add more sections like your manpower one had -->
+      <!-- <h3>Key Highlights</h3>
+      <ul>
+        <li>Prefabricated modular buildings for rapid deployment</li>
+        <li>Complete utility infrastructure (water, sewage, fire protection)</li>
+        <li>Site development including roads, parking & fencing</li>
+      </ul> -->
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Jazaaco Ventures. <span data-key="footer-rights">All Rights Reserved.</span></p>
+  <p data-key="footer-tagline">Powering Saudi Arabia's Industrial Future</p>
+</footer>
+<script>
+// TRANSLATIONS
+const translations = {
+  en: {
+    'nav-home': 'Home',
+    'nav-about': 'About Us',
+    'nav-products': 'Products',
+    'nav-services': 'Services',
+    'nav-all-services': 'All Services',
+    'nav-projects': 'Projects',
+    'nav-clients': 'Clients',
+    'nav-team': 'team',
+'nav-careers': 'Careers',
+    'nav-contact': 'Contact',
+    'nav-industrial': 'Industrial Supply',
+    'nav-fire': 'Fire Protection',
+    'nav-hvac': 'HVAC & MEP Services',
+    'nav-cooling': 'Concrete Cooling',
+    'nav-sustainability': 'Sustainability Services',
+    'nav-fabrication': 'Fabrication Services',
+    'nav-fire-services': 'Fire & Safety Services',
+'nav-project-almarai' : 'Almarai Project',
+'nav-project-acino' : 'Acino Project',
+'nav-project-booth' : ' Event Booth',
+'nav-project-zamil' : ' Zamil HVAC Project',
+'nav-project-nahdi' : ' Nahdi Project',
+'nav-project-flag': ' Flag Project',
+    'hero-title': 'Industrial Excellence in Kingdom of Saudi Arabia',
+    'hero-subtitle': 'Your trusted partner for HVAC Maintenance, Concrete Cooling, and Global Industrial Supply Solutions.',
+    'about-title': 'Building the Future of Saudi Industry with Integrity and Innovation',
+    'about-mission': 'Our Mission',
+    'about-description': 'At Jazaaco Ventures, we are dedicated to bridging the gap between global industrial standards and local market needs. Based in Jeddah, we provide world-class supply chain solutions, MEP services, and specialized cooling technologies that empower Saudi Arabia\'s infrastructure and industrial sectors.',
+    'about-why-jazaaco': '',
+    'about-why-title': 'Why Jazaaco Ventures?',
+    'about-why-desc': 'With a deep understanding of the Saudi landscape—from the humid coastal climates of Jeddah to the rigorous demands of Vision 2030 projects—we deliver reliability. Our team ensures that every client receives personalized service and technical precision.',
+    'about-values': 'Our Core Values',
+    'about-point-1': 'Quality First: Highest-grade materials and equipment.',
+    'about-point-2': 'Sustainability: Protecting the Kingdom\'s environment.',
+    'about-point-3': 'Local Partnership: Trusted partner for Jeddah\'s industrial community.',
+    'services-title': 'Our Core Deliverables',
+    'services-select-prompt': 'Select a service to view full technicalities.',
+    'service-1-title': 'Industrial Supply',
+    'service-1-desc': 'Top-tier equipment sourcing and supply chain management in Kingdom Of Saudi Arabia.',
+    'service-2-title': 'Fire Protection & Safety',
+    'service-2-desc': 'Complete fire suppression systems, safety equipment, and emergency response solutions.',
+    'service-3-title': 'HVAC & MEP',
+    'service-3-desc': 'Expert maintenance and mechanical engineering for large scale projects.',
+    'service-4-title': 'Concrete Cooling',
+    'service-4-desc': 'Specialized temperature control solutions for construction.',
+    'service-5-title': 'Sustainable Architecture',
+    'service-5-desc': 'Commitment to energy-efficient operations.',
+    'service-6-title': 'Interior Products',
+    'service-6-desc': 'Functional, aesthetic, and compliant interior architectural solutions.',
+    'service-7-title': 'Telecommunications',
+    'service-7-desc': 'Infrastructure setup, fiber optics, and network maintenance solutions.',
+    'service-8-title': 'Manpower Supply',
+    'service-8-desc': 'Skilled and unskilled labor supply for specialized industrial projects.',
+    'service-9-title': 'Rental Equipment',
+    'service-9-desc': 'Heavy machinery and specialized tool rentals for construction and oil & gas.',
+    'service-10-title': 'General Contracting',
+    'service-10-desc': 'End-to-end civil works, building construction, and project management.',
+    'service-11-title': 'Fabrication',
+    'service-11-desc': 'Custom steel fabrication, pipe spool manufacturing, and structural metalwork.',
+    'projects-title': 'Our Projects',
+    'project-1-title': 'Almarai Project',
+    'project-1-desc': 'Acheived the target, and client satisfaction.',
+    'project-1-date': '2024–2025 ',
+'client-lable' : 'Client:',
+'status-lable' : 'Status:',
+'scope-label' : 'Scope:',
+'completed-label' : ' completed',
+'project-2-title': 'Acino Project',
+    'project-2-desc': 'Build entire interior with our productions.',
+    'project-2-date': '2024–2025 ',
+'project-3-title': 'Booths for Malls/Events ',
+    'project-3-desc': 'Build entire booths for malls and events.',
+    'project-3-date': '2024–2025 ',
+'project-4-title': 'Zamil HVAC ',
+    'project-4-desc': 'HVAC Installation and Service.',
+    'project-4-date': '2024–2025 ',
+'project-5-title': 'Nahdi Project',
+    'project-5-desc': 'Renovation buildup.',
+    'project-5-date': '2024–2025 ',
+	'project-6-title': 'Flag Project', 
+	'project-6-desc': 'Interior Renovation.', 
+	'project-6-date':'2024-2025',
+    'project-cta': 'Start Your Project With Us',
+    'partners-title': 'Our Partners',
+    'clients-title': 'Our Clients',
+    'clients-subtitle': '"Entrusted by market leaders to deliver excellence at every stage."',
+    'team-title': 'Our Leadership Team',
+    'team-subtitle': 'Meet the passionate experts driving innovation and excellence at Jazaaco Ventures',
+    'team-executive-title': 'Executive Leadership',
+    'team-operations-title': 'Operations & Sales',
+    'team-position-ceo': 'Chief Executive Officer',
+    'team-sales-position': 'Sales Director',
+    'team-board-position': 'Board Member',
+    'team-purchase-position': 'Head of Purchase',
+    'team-sales-position': 'Sales & Business Development Director',
+    'team-concrete-position': 'Head of Concrete Cooling',
+    'team-accounts-position' : 'Buisness Development Manager',
+    'team-project-position': 'Project Manager',
+    'team-arch-position': 'Project Architect',
+    'contact-pretitle': 'Let\'s Talk',
+    'contact-title': 'Have A Project In Mind? Contact Us',
+    'contact-name': 'Your Name',
+    'contact-email': 'Email Address',
+    'contact-phone': 'Phone Number',
+    'contact-message': 'Your Message',
+    'contact-submit': 'Send Message',
+    'contact-details': 'Contact Details',
+    'contact-address-label': 'Address:',
+    'contact-address': '7393 Al Tadamun Al Arabi, Al-Rehab, Jeddah 23343',
+    'contact-phone-label': 'Phone:',
+    'contact-email-label': 'Email:',
+    'contact-map-btn': 'Open in Google Maps',
+    'footer-rights': 'All Rights Reserved.',
+    'footer-tagline': 'Powering Saudi Arabia\'s Industrial Future',
+    'back-btn': '← Back',
+	'career-heading' : 'Join Our Team',
+	'career-introtext' : 'We are looking for passionate and ambitious talents who want to work with a team of experts and professionals.',
+ // Industrial page
+    'industrial-title': 'Technical Specifications: Industrial Supply',
+    'industrial-intro': 'Our industrial supply division specializes in the procurement of high-pressure valves, heavy-duty gaskets, and specialized PPE for the Saudi oil and gas sector.',
+    'industrial-cat-title': 'Core Product Categories',
+    'industrial-cat-1': 'Safety Equipment: Hard hats, safety goggles, high-visibility vests, and fire-resistant clothing certified to international standards.',
+    'industrial-cat-2': 'Power Tools: Industrial-grade drills, grinders, welding equipment from leading manufacturers like Bosch and DeWalt.',
+    'industrial-cat-3': 'Fasteners & Hardware: Stainless steel bolts, nuts, washers, and anchors for marine and industrial environments.',
+    'industrial-cat-4': 'Pumps & Valves: High-pressure hydraulic systems, gate valves, and control valves for petrochemical facilities.',
+    'industrial-cat-5': 'Material Handling: Forklifts, pallet jacks, and lifting equipment with full maintenance support.',
+   
+    // HVAC page
+    'hvac-title': 'HVAC & MEP Technical Details',
+    'hvac-video-title': 'Watch Our Cooling Solutions in Action',
+    'hvac-video-unsupported': 'Your browser does not support the video tag.',
+    'hvac-intro': 'We provide design and maintenance for VRF systems and chilled water plants. Our MEP services include full electrical load calculations and firefighting system integration.',
+    'hvac-systems-title': 'HVAC Systems Design',
+    'hvac-sys-1': 'VRF Technology: Variable Refrigerant Flow systems for energy-efficient climate control in commercial buildings.',
+    'hvac-sys-2': 'Central Cooling: Chilled water plants with centrifugal chillers ranging from 100 to 2000 TR capacity.',
+    'hvac-sys-3': 'Air Distribution: Custom ductwork design using computational fluid dynamics for optimal airflow.',
+    'hvac-sys-4': 'Building Automation: Smart HVAC controls integrated with BMS for real-time monitoring and optimization.',
+    'hvac-img-1': 'Zamil Chiller',
+    'hvac-img-2': 'Trane Chiller',
+    'hvac-img-3': 'Carrier Chiller',
+    'mep-title': 'MEP Engineering Services',
+    'mep-1': 'Mechanical System Installations: Air Conditioning Ventilation, All kinds of HVAC systems, Air Filtration & Treatment, Refrigeration and Cold Stores, Pumps Installations, Compressed Air Systems, Chilled Water Piping.',
+    'mep-2': 'Electrical System Installations: Power distribution, building management, low current systems, switchgears, lighting, and MV/LV control solutions—all in one efficient package.',
+    'mep-3': 'Plumbing and Drainage system: We specialize in cold and hot water piping, water storage tanks, water cooling systems, pumps and pumping stations, drainage and rainwater piping, and central water heater systems.',
+    'mep-img-1': 'Mechanical',
+    'mep-img-2': 'Electrical',
+    'mep-img-3': 'Plumbing',
+    'hvac-maintenance-title': 'Preventive Maintenance Programs',
+    'hvac-maintenance-desc': 'Our maintenance packages include quarterly inspections, filter replacements, refrigerant charging, and detailed performance reports to ensure system longevity.',
+   
+    // Cooling page
+    'cooling-video-title': 'Watch Our Cooling Solutions in Action',
+    'cooling-video-unsupported': 'Your browser does not support the video tag.',
+    'cooling-title': 'Concrete Cooling Solutions',
+    'cooling-intro': 'Jazaaco our partner established in the year 1996, we are leading organization engaged in Design, manufacturing, exporting and supplying wide range of products like Flake Ice Plant, Tube Ice Plant, Chilled water plant, and more.',
+    'cooling-tech-title': 'Cooling Technologies',
+    'cooling-tech-1': 'Flake Ice Plants: Production capacity from 5 to 100 tons per day, delivering ice at -7°C for rapid concrete temperature reduction.',
+    'cooling-tech-2': 'Chilled Water Systems: Closed-loop cooling with plate heat exchangers to maintain precise concrete mixing temperatures.',
+    'cooling-tech-3': 'Tube Ice Plant: A specialized facility that produces clear, cylindrical ice with a hole in the middle by freezing water inside vertical stainless steel tubes.',
+    'cooling-tech-4': 'Automatic Ice Handling: A mechanized system of screw conveyors, belts, and pneumatic blowers that moves ice from production to storage or bagging without manual labor.',
+    'cooling-tech-5': 'Ice Storage Room: An insulated, refrigerated space designed to hold large quantities of ice at sub-zero temperatures to prevent melting and clumping.',
+    'cooling-tech-6': 'Air Cooling System: A network of fans and evaporators that circulates chilled air to maintain a stable environment and prevent heat gain within the facility.',
+    'cooling-img-1': 'Tube Ice Plant',
+    'cooling-img-2': 'Flake Ice Plant',
+    'cooling-img-3': 'Chilled Water System',
+    'cooling-img-4': 'Automatic Ice Handling',
+    'cooling-img-5': 'Automatic ice handling parts',
+    'cooling-specs-title': 'Technical Specifications',
+    'cooling-specs-desc': 'Our systems are designed to handle mass concrete pours for foundations, dams, and high-rise structures. We provide on-site temperature monitoring with real-time data logging to ensure compliance with ACI 305 standards for hot weather concreting.',
+    'cooling-apps-title': 'Project Applications',
+    'cooling-app-1': 'Foundation pours for NEOM and Red Sea Project developments',
+    'cooling-app-2': 'Bridge deck cooling for Jeddah coastal infrastructure',
+    'cooling-app-3': 'Mass concrete pours for industrial facilities and power plants',
+    'cooling-app-4': 'Precast concrete production temperature control',
+   
+    // Sustainability page
+    'sustainability-title': 'Sustainability & Energy Efficiency',
+    'sustainability-video-title': 'Watch Our Sustainability in Architecture',
+    'sustainability-video-unsupported': 'Your browser does not support the video tag.',
+    'sustainability-intro': 'We create buildings that are energy-efficient, eco-friendly, and future-ready. Our designs reduce carbon footprint, integrate renewable energy, and enhance human well-being.',
+    'sustainability-green-title': 'Green Building Solutions',
+    'sustainability-green-1': 'LED Lighting Retrofits: Conversion to high-efficiency LED systems with motion sensors, reducing energy consumption by up to 70%.',
+    'sustainability-green-2': 'Solar Integration: Hybrid HVAC systems incorporating solar thermal collectors for pre-heating and cooling applications.',
+    'sustainability-green-3': 'Variable Speed Drives: Installation of VFDs on pumps and fans to optimize energy usage based on real-time demand.',
+    'sustainability-green-4': 'Heat Recovery Systems: Capturing waste heat from chillers and compressors for domestic hot water production.',
+    'sustainability-impact-title': 'Environmental Impact Reduction',
+    'sustainability-impact-1': 'Implementation of R-32 and R-410A refrigerants with lower global warming potential',
+    'sustainability-impact-2': 'Water conservation through greywater recycling systems in MEP installations',
+    'sustainability-impact-3': 'Thermal insulation upgrades to reduce HVAC loads and energy waste',
+    'sustainability-impact-4': 'Smart metering and energy management systems for continuous optimization',
+    'sustainability-vision-title': 'Vision 2030 Alignment',
+    'sustainability-vision-desc': 'Our sustainability initiatives support Saudi Arabia\'s commitment to renewable energy and carbon neutrality. We provide detailed carbon footprint assessments and ROI analysis for all energy efficiency projects.',
+   
+    // Internal Architecture page
+    'internal-arch-title': 'Technical Specifications: Internal Architecture',
+    'internal-arch-intro': 'Our internal architecture solutions focus on intelligent space planning, high-quality finishes, and seamless integration of architectural and MEP systems.',
+    'internal-arch-scope-title': 'Scope of Work',
+    'internal-arch-scope-1': 'Space Planning: Efficient layouts optimizing workflow, safety, and comfort.',
+    'internal-arch-scope-2': 'Partition Systems: Gypsum, glass, aluminum, and modular partitions.',
+    'internal-arch-scope-3': 'Ceiling Systems: Gypsum, mineral fiber, metal, and acoustic ceilings.',
+    'internal-arch-scope-4': 'Flooring Solutions: Epoxy, vinyl, marble, ceramic tiles, and raised floors.',
+    'internal-arch-scope-5': 'Joinery & Woodwork: Custom doors, cabinets, wall panels, and reception desks.',
+    'internal-arch-design-title': 'Design & Compliance',
+    'internal-arch-design-desc': 'All designs comply with Saudi Building Codes, Civil Defense regulations, and international architectural standards, ensuring safety and durability.',
+    'internal-arch-execution-title': 'Execution & Finishing',
+    'internal-arch-execution-desc': 'Our skilled execution teams ensure precise installation, premium finishing, and timely delivery with strict quality control at every stage.',
+   
+    // Telecom page
+    'telecom-title': 'Telecommunications Infrastructure Solutions',
+    'telecom-intro': 'Comprehensive telecommunications infrastructure services including fiber optic installation, network design, and ongoing maintenance for industrial and commercial facilities across Saudi Arabia.',
+    'telecom-fiber-title': 'Fiber Optic Solutions',
+    'telecom-fiber-1': 'Fiber Installation: Single-mode and multi-mode fiber optic cable installation for high-speed data transmission.',
+    'telecom-fiber-2': 'Splicing & Testing: Fusion splicing services with OTDR testing to ensure optimal signal quality.',
+    'telecom-fiber-3': 'Structured Cabling: Category 6A and fiber backbone systems for enterprise networks.',
+    'telecom-fiber-4': 'Outside Plant: Underground and aerial fiber deployment for campus and industrial park connectivity.',
+    'telecom-network-title': 'Network Infrastructure',
+    'telecom-network-1': 'Data Centers: Rack installation, cable management, and power distribution for server rooms.',
+    'telecom-network-2': 'Wireless Systems: WiFi access point installation and radio frequency optimization.',
+    'telecom-network-3': 'Security Systems: IP camera networks and access control system integration.',
+    'telecom-network-4': 'Emergency Communications: Two-way radio systems and emergency notification infrastructure.',
+    'telecom-support-title': 'Maintenance & Support',
+    'telecom-support-desc': '24/7 technical support with rapid response teams for network troubleshooting, fiber repair, and system upgrades. We maintain comprehensive documentation and as-built drawings for all installations.',
+   
+    // Manpower page
+    'manpower-title': 'Professional Manpower Supply Services',
+    'manpower-intro': 'Reliable supply of skilled and unskilled labor for industrial, construction, and maintenance projects.',
+    'manpower-unskilled-title': 'Unskilled Labor Services',
+    'manpower-unskilled-1': 'General construction workers for civil and building projects',
+    'manpower-unskilled-2': 'Material handlers and warehouse personnel',
+'manpower-unskilled-3': 'Cleaning and janitorial staff for industrial facilities',
+'manpower-unskilled-4': 'Site security and access control personnel',
+'manpower-compliance-title': 'Compliance & Safety',
+'manpower-compliance-1': 'All personnel undergo comprehensive safety training and certification',
+'manpower-compliance-2': 'Full compliance with Saudi labor laws and GOSI regulations',
+'manpower-compliance-3': 'Regular health screenings and medical fitness certifications',
+'manpower-compliance-4': 'Documentation management including work permits and iqama processing',
+'manpower-management-title': 'Workforce Management',
+'manpower-management-desc': 'We provide complete workforce solutions including recruitment, onboarding, payroll management, and performance monitoring. Our team ensures all workers are properly equipped, trained, and supervised to maintain the highest standards of safety and productivity.',
+// Rentals page
+'rentals-title': 'Equipment Rental Services',
+'rentals-intro': 'Comprehensive heavy machinery and specialized equipment rental solutions for construction, oil & gas, and industrial projects throughout Saudi Arabia.',
+'rentals-heavy-title': 'Heavy Machinery',
+'rentals-heavy-1': 'Excavators & Loaders: Hydraulic excavators from 5 to 50 tons, wheel loaders, and backhoe loaders.',
+'rentals-heavy-2': 'Cranes & Lifting: Mobile cranes, tower cranes, and material hoists with certified operators.',
+'rentals-heavy-3': 'Earthmoving Equipment: Bulldozers, graders, and compaction equipment for site preparation.',
+'rentals-heavy-4': 'Material Handling: Forklifts, telehandlers, and aerial work platforms.',
+'rentals-img-1': 'Heavy Machinery',
+'rentals-specialized-title': 'Specialized Equipment',
+'rentals-specialized-1': 'Welding & Cutting: Industrial welding machines, plasma cutters, and gas cutting equipment.',
+'rentals-specialized-2': 'Power Generation: Diesel generators from 20 kVA to 2000 kVA capacity.',
+'rentals-specialized-3': 'Pumping Systems: Dewatering pumps, concrete pumps, and chemical transfer pumps.',
+'rentals-specialized-4': 'Compressors: Air compressors for pneumatic tools and sandblasting operations.',
+'rentals-terms-title': 'Rental Terms & Support',
+'rentals-terms-desc': 'Flexible rental periods from daily to long-term contracts. All equipment is regularly maintained and inspected for safety compliance. We provide on-site technical support, spare parts, and emergency breakdown services to minimize downtime.',
+// Construction page
+'construction-title': 'General Contracting & Civil Works',
+'construction-intro': 'End-to-end construction management and civil engineering services for commercial, industrial, and infrastructure projects across the Kingdom of Saudi Arabia.',
+'construction-services-title': 'Core Services',
+'construction-services-1': 'Building Construction: Commercial buildings, warehouses, and industrial facilities from foundation to handover.',
+'construction-services-2': 'Civil Works: Site grading, earthworks, concrete works, and underground utilities.',
+'construction-services-3': 'Infrastructure: Roads, drainage systems, water networks, and sewage treatment facilities.',
+'construction-services-4': 'Renovation & Retrofitting: Modernization of existing structures and facility upgrades.',
+'construction-img-1': 'Site Development',
+'construction-img-2': 'Building Construction',
+'construction-img-3': 'Infrastructure',
+'construction-management-title': 'Project Management',
+'construction-management-1': 'Detailed project planning and scheduling using Primavera and MS Project',
+'construction-management-2': 'Quality assurance and quality control throughout all phases',
+'construction-management-3': 'Health, safety, and environment (HSE) management systems',
+'construction-management-4': 'Regular progress reporting and stakeholder communication',
+'construction-compliance-title': 'Compliance & Standards',
+'construction-compliance-desc': 'All projects are executed in full compliance with Saudi Building Code (SBC), Civil Defense requirements, and international construction standards. We maintain comprehensive quality documentation and provide warranty support for completed works.',
+// Fabrication page
+'fabrication-title': 'Steel Fabrication & Metalwork Services',
+'fabrication-video-title': 'Watch Our Fabrication Capabilities',
+'fabrication-video-unsupported': 'Your browser does not support the video tag.',
+'fabrication-intro': 'State-of-the-art fabrication facility providing custom steel structures, pipe spools, and precision metalwork for industrial and commercial applications.',
+'fabrication-structural-title': 'Structural Steel Fabrication',
+'fabrication-structural-1': 'Steel Structures: Custom fabrication of beams, columns, trusses, and frames for buildings and industrial facilities.',
+'fabrication-structural-2': 'Pipe Spools: Pre-fabricated piping assemblies for oil & gas, petrochemical, and water treatment plants.',
+'fabrication-structural-3': 'Platforms & Walkways: Industrial access platforms, mezzanines, and safety walkways with grating and handrails.',
+'fabrication-structural-4': 'Storage Tanks: Fabrication of water tanks, fuel tanks, and process vessels to ASME standards.',
+'fabrication-img-1': 'Steel Structures',
+'fabrication-capabilities-title': 'Manufacturing Capabilities',
+'fabrication-capabilities-1': 'Cutting: CNC plasma and oxy-fuel cutting for plates up to 100mm thickness.',
+'fabrication-capabilities-2': 'Bending & Rolling: Hydraulic press brakes and plate rolling machines for complex geometries.',
+'fabrication-capabilities-3': 'Welding: SMAW, GMAW, GTAW, and SAW processes with certified welders to ASME IX and AWS D1.1.',
+'fabrication-capabilities-4': 'Surface Treatment: Sandblasting, painting, and galvanizing for corrosion protection.',
+'fabrication-quality-title': 'Quality Assurance',
+'fabrication-quality-desc': 'All fabrication work undergoes rigorous inspection including dimensional checks, NDT testing (RT, UT, MT, PT), and material certification. We maintain full traceability documentation and provide as-built drawings for all delivered components.',
+// Fire Safety page
+'fire-safety-title': 'Fire Protection & Safety Systems',
+'fire-safety-intro': 'Comprehensive fire protection solutions including system design, installation, testing, and maintenance for commercial, industrial, and residential facilities throughout Saudi Arabia.',
+'fire-suppression-title': 'Fire Suppression Systems',
+'fire-suppression-1': 'Sprinkler Systems: Wet, dry, pre-action, and deluge sprinkler systems designed to NFPA 13 standards.',
+'fire-suppression-2': 'FM-200 Systems: Clean agent fire suppression for server rooms, control rooms, and sensitive equipment.',
+'fire-suppression-3': 'Foam Systems: High-expansion and low-expansion foam systems for hazardous material storage.',
+'fire-suppression-4': 'CO2 Systems: Carbon dioxide suppression for industrial applications and electrical rooms.',
+'fire-img-1': 'Sprinkler Systems',
+'fire-img-2': 'Detection Systems',
+'fire-img-3': 'Safety Equipment',
+'fire-detection-title': 'Fire Detection & Alarm',
+'fire-detection-1': 'Addressable Systems: Intelligent fire alarm panels with individual device identification and fault monitoring.',
+'fire-detection-2': 'Smoke & Heat Detectors: Optical, ionization, and multi-sensor detectors for early warning.',
+'fire-detection-3': 'Manual Call Points: Break glass alarm activation stations strategically located throughout facilities.',
+'fire-detection-4': 'Voice Evacuation: Emergency communication systems for orderly evacuation procedures.',
+'fire-safety-equipment-title': 'Safety Equipment Supply',
+'fire-safety-equipment-1': 'Portable fire extinguishers (CO2, DCP, foam, water) with wall mounting and signage',
+'fire-safety-equipment-2': 'Fire hose reels and cabinets with compliant pressure ratings',
+'fire-safety-equipment-3': 'Emergency lighting and exit signs with battery backup',
+'fire-safety-equipment-4': 'Fire blankets, first aid stations, and emergency equipment',
+'fire-compliance-title': 'Compliance & Certification',
+'fire-compliance-desc': 'All installations comply with Saudi Civil Defense regulations, NFPA codes, and international fire safety standards. We provide comprehensive testing, commissioning, and annual maintenance services with detailed documentation and certification.'
+  
+    // Industrial page ... (all the rest of your English translations remain unchanged)
+    // ... (omitted here for brevity – keep your original content)
+  },
+  ar: {
+'nav-home': 'الرئيسية',
+'nav-about': 'من نحن',
+'nav-products': 'المنتجات',
+'nav-services': 'الخدمات',
+'nav-all-services': 'جميع الخدمات',
+'nav-projects': 'المشاريع',
+'nav-clients': 'العملاء',
+'nav-team': 'الفريق',
+'nav-careers': 'الوظائف',
+'nav-contact': 'تواصل معنا',
+'nav-industrial': 'الإمدادات الصناعية',
+'nav-fire': 'الحماية من الحرائق',
+'nav-hvac': 'خدمات التكييف والميكانيكا',
+'nav-cooling': 'تبريد الخرسانة',
+'nav-sustainability': 'خدمات الاستدامة',
+'nav-fabrication': 'خدمات التصنيع',
+'nav-fire-services': 'خدمات الحريق والسلامة',
+'nav-project-almarai': 'مشروع المراعي',
+'nav-project-acino': 'مشروع أسينو',
+'nav-project-booth': 'أجنحة المعارض',
+'nav-project-zamil': 'مشروع زامل للتكييف',
+'nav-project-nahdi': 'مشروع النهدي',
+'nav-project-flag': 'مشروع فلاق',
+'hero-title': 'التميز الصناعي في المملكة العربية السعودية',
+'hero-subtitle': 'شريكك الموثوق لصيانة التكييف وتبريد الخرسانة وحلول التوريد الصناعية العالمية.',
+'about-title': 'بناء مستقبل الصناعة السعودية بالنزاهة والابتكار',
+'about-mission': 'مهمتنا',
+'about-description': 'في مشاريع جزاكو، نحن ملتزمون بسد الفجوة بين المعايير الصناعية العالمية واحتياجات السوق المحلي. نوفر من جدة حلول سلسلة التوريد وخدمات الميكانيكا والكهرباء والسباكة وتقنيات التبريد المتخصصة التي تدعم البنية التحتية والقطاعات الصناعية في المملكة.',
+'about-why-jazaaco': '',
+'about-why-title': 'لماذا مشاريع جزاكو؟',
+'about-why-desc': 'بفهم عميق للمشهد السعودي—من المناخ الساحلي الرطب في جدة إلى المتطلبات الصارمة لمشاريع رؤية 2030—نقدم الموثوقية. فريقنا يضمن حصول كل عميل على خدمة شخصية ودقة تقنية.',
+'about-values': 'قيمنا الأساسية',
+'about-point-1': 'الجودة أولاً: مواد ومعدات من أعلى المستويات.',
+'about-point-2': 'الاستدامة: حماية بيئة المملكة.',
+'about-point-3': 'الشراكة المحلية: شريك موثوق للمجتمع الصناعي في جدة.',
+'services-title': 'خدماتنا الأساسية',
+'services-select-prompt': 'اختر خدمة لعرض التفاصيل الفنية الكاملة.',
+'service-1-title': 'الإمدادات الصناعية',
+'service-1-desc': 'مصادر معدات من الدرجة الأولى وإدارة سلسلة التوريد في المملكة العربية السعودية.',
+'service-2-title': 'الحماية من الحرائق والسلامة',
+'service-2-desc': 'أنظمة مكافحة الحريق الكاملة ومعدات السلامة وحلول الاستجابة للطوارئ.',
+'service-3-title': 'التكييف والميكانيكا',
+'service-3-desc': 'صيانة متخصصة وهندسة ميكانيكية للمشاريع الكبرى.',
+'service-4-title': 'تبريد الخرسانة',
+'service-4-desc': 'حلول التحكم في درجة الحرارة المتخصصة للبناء.',
+'service-5-title': 'العمارة المستدامة',
+'service-5-desc': 'الالتزام بالعمليات الموفرة للطاقة.',
+'service-6-title': 'المنتجات الداخلية',
+'service-6-desc': 'حلول معمارية داخلية وظيفية وجمالية ومتوافقة.',
+'service-7-title': 'الاتصالات',
+'service-7-desc': 'إعداد البنية التحتية والألياف الضوئية وحلول صيانة الشبكات.',
+'service-8-title': 'توريد القوى العاملة',
+'service-8-desc': 'توريد عمالة ماهرة وغير ماهرة للمشاريع الصناعية المتخصصة.',
+'service-9-title': 'تأجير المعدات',
+'service-9-desc': 'تأجير الآلات الثقيلة والأدوات المتخصصة للبناء والنفط والغاز.',
+'service-10-title': 'المقاولات العامة',
+'service-10-desc': 'أعمال مدنية شاملة وبناء المباني وإدارة المشاريع.',
+'service-11-title': 'التصنيع',
+'service-11-desc': 'تصنيع الصلب المخصص وتصنيع أنابيب السباكة والأعمال المعدنية الإنشائية.',
+'projects-title': 'مشاريعنا',
+'project-1-title': 'مشروع المراعي',
+'project-1-desc': 'تم تحقيق الأهداف مع ضمان رضا العميل الكامل.',
+'project-1-date': '2024–2025',
+'client-label': 'العميل:',
+'status-label': 'الحالة:',
+'scope-label': 'نطاق العمل:',
+'completed-label': 'مكتمل',
+'project-2-title': 'مشروع أسينو',
+'project-2-desc': 'تنفيذ وتجهيز كامل للأعمال الداخلية باستخدام إنتاجنا الخاص.',
+'project-2-date': '2024–2025',
+'project-3-title': 'أجنحة للمعارض والمراكز التجارية',
+'project-3-desc': 'تنفيذ وتجهيز أجنحة كاملة للمعارض والمراكز التجارية.',
+'project-3-date': '2024–2025',
+'project-4-title': 'مشروع زامل للتكييف',
+'project-4-desc': 'توريد وتركيب وصيانة أنظمة التكييف.',
+'project-4-date': '2024–2025',
+'project-5-title': 'مشروع النهدي',
+'project-5-desc': 'أعمال تجديد وتجهيز متكاملة.',
+'project-5-date': '2024–2025',
+'project-6-title': 'مشروع فلاق',
+  'project-6-desc': 'تجديد داخلي.',
+  'project-6-date': '2024-2025',
+
+'nahdih' : ' Nahdi Pharmacy',
+'nahdip': 'Complete renovation of the pharmacy exterior.',
+'nahdi-c': 'Nahdi',
+'completed': 'Completed',
+'nahdi-s': 'Restored and renovated complete pharmacy.',
+    'project-cta': 'ابدأ مشروعك معنا',
+    'partners-title': 'شركاؤنا',
+    'clients-title': 'عملاؤنا',
+    'clients-subtitle': '"موثوق بنا من قادة السوق لتقديم التميز في كل مرحلة."',
+    'team-title': 'فريق القيادة لدينا',
+    'team-subtitle': 'تعرف على الخبراء المتحمسين الذين يقودون الابتكار والتميز في شركة جزاكو فينتشرز',
+    'team-executive-title': 'القيادة التنفيذية',
+    'team-operations-title': 'العمليات والمبيعات',
+    'team-position-ceo': 'الرئيس التنفيذي',
+    'team-sales-position': 'مدير المبيعات وتطوير الأعمال',
+    'team-board-position': 'عضو مجلس الإدارة',
+    'team-purchase-position': 'رئيس قسم المشتريات',
+    'team-concrete-position': 'رئيس قسم تبريد الخرسانة',
+    'team-accounts-position': 'مدير تطوير الأعمال',
+    'team-project-position': 'مدير المشروع',
+    'team-arch-position': 'مهندس المشروع المعماري',
+    'contact-pretitle': 'دعنا نتحدث',
+    'contact-title': 'هل لديك مشروع في ذهنك؟ تواصل معنا',
+    'contact-name': 'اسمك',
+    'contact-email': 'البريد الإلكتروني',
+    'contact-phone': 'رقم الهاتف',
+    'contact-message': 'رسالتك',
+    'contact-submit': 'إرسال الرسالة',
+    'contact-details': 'تفاصيل الاتصال',
+    'contact-address-label': 'العنوان:',
+    'contact-address': '7393 التضامن العربي، الرحاب، جدة 23343',
+    'contact-phone-label': 'الهاتف:',
+    'contact-email-label': 'البريد الإلكتروني:',
+    'contact-map-btn': 'فتح في خرائط جوجل',
+    'footer-rights': 'جميع الحقوق محفوظة.',
+    'footer-tagline': 'تشغيل مستقبل الصناعة السعودية',
+    'back-btn': '→ رجوع',
+	  'career-heading': 'انضم إلى فريقنا',
+	  'career-introtext': 'نبحث عن مواهب شغوفة وطموحة ترغب في العمل مع فريق من الخبراء والمحترفين.',
+
+ // Industrial page
+    'industrial-title': 'المواصفات الفنية: التوريدات الصناعية',
+    'industrial-intro': 'قسم التوريدات الصناعية لدينا متخصص في توفير الصمامات عالية الضغط والحشوات الثقيلة ومعدات الحماية الشخصية المتخصصة لقطاع النفط والغاز السعودي.',
+    'industrial-cat-title': 'فئات المنتجات الأساسية',
+    'industrial-cat-1': 'معدات السلامة: خوذات الأمان، نظارات واقية, سترات عالية الوضوح, وملابس مقاومة للحريق معتمدة بالمعايير الدولية.',
+    'industrial-cat-2': 'الأدوات الكهربائية: مثاقب وطواحين ومعدات لحام صناعية من كبار المصنعين مثل بوش وديوالت.',
+    'industrial-cat-3': 'المثبتات والأجهزة: براغي وصواميل وغسالات ومراسي من الفولاذ المقاوم للصدأ للبيئات البحرية والصناعية.',
+    'industrial-cat-4': 'المضخات والصمامات: أنظمة هيدروليكية عالية الضغط وصمامات بوابة وصمامات تحكم لمنشآت البتروكيماويات.',
+    'industrial-cat-5': 'مناولة المواد: رافعات شوكية وعربات البليت ومعدات رفع مع دعم صيانة كامل.',
+   
+    // HVAC page
+    'hvac-title': 'التفاصيل الفنية للتكييف والميكانيكا',
+    'hvac-video-title': 'شاهد حلول التبريد لدينا أثناء العمل',
+    'hvac-video-unsupported': 'متصفحك لا يدعم علامة الفيديو.',
+    'hvac-intro': 'نوفر التصميم والصيانة لأنظمة VRF ومحطات المياه المبردة. تشمل خدمات الميكانيكا والكهرباء والسباكة لدينا حسابات الحمل الكهربائي الكاملة ودمج نظام مكافحة الحرائق.',
+    'hvac-systems-title': 'تصميم أنظمة التكييف',
+    'hvac-sys-1': 'تقنية VRF: أنظمة تدفق التبريد المتغير لتحكم مناخي موفر للطاقة في المباني التجارية.',
+    'hvac-sys-2': 'التبريد المركزي: محطات مياه مبردة مع مبردات طرد مركزي تتراوح من 100 إلى 2000 طن تبريد.',
+    'hvac-sys-3': 'توزيع الهواء: تصميم مجاري هواء مخصص باستخدام ديناميكيات الموائع الحسابية لتدفق هواء مثالي.',
+    'hvac-sys-4': 'أتمتة المباني: ضوابط تكييف ذكية متكاملة مع نظام إدارة المبنى للمراقبة والتحسين في الوقت الفعلي.',
+    'hvac-img-1': 'مبرد زامل',
+    'hvac-img-2': 'مبرد ترين',
+    'hvac-img-3': 'مبرد كارير',
+    'mep-title': 'خدمات الهندسة الميكانيكية والكهربائية والسباكة',
+    'mep-1': 'تركيبات الأنظمة الميكانيكية: تهوية وتكييف الهواء، جميع أنواع أنظمة التكييف, تنقية ومعالجة الهواء, التبريد والمخازن الباردة, تركيبات المضخات, أنظمة الهواء المضغوط, أنابيب المياه المبردة.',
+    'mep-2': 'تركيبات الأنظمة الكهربائية: توزيع الطاقة, إدارة المباني, أنظمة التيار المنخفض, لوحات التحكم, الإضاءة, وحلول التحكم MV/LV—كل ذلك في حزمة واحدة فعالة.',
+    'mep-3': 'أنظمة السباكة والصرف: نحن متخصصون في أنابيب المياه الباردة والساخنة, خزانات تخزين المياه, أنظمة تبريد المياه, المضخات ومحطات الضخ, أنابيب الصرف ومياه الأمطار, وأنظمة السخانات المركزية.',
+    'mep-img-1': 'ميكانيكي',
+    'mep-img-2': 'كهربائي',
+    'mep-img-3': 'سباكة',
+    'hvac-maintenance-title': 'برامج الصيانة الوقائية',
+    'hvac-maintenance-desc': 'تشمل حزم الصيانة لدينا فحوصات ربع سنوية واستبدال المرشحات وشحن المبردات وتقارير أداء مفصلة لضمان عمر النظام الطويل.',
+   
+    // Cooling page
+    'cooling-video-title': 'شاهد حلول التبريد لدينا أثناء العمل',
+    'cooling-video-unsupported': 'متصفحك لا يدعم علامة الفيديو.',
+    'cooling-title': 'حلول تبريد الخرسانة',
+    'cooling-intro': 'جزاكو شريكنا المؤسس في عام 1996, نحن منظمة رائدة في التصميم والتصنيع والتصدير وتوريد مجموعة واسعة من المنتجات مثل مصنع الثلج الرقائقي ومصنع الثلج الأنبوبي ومحطة المياه المبردة والمزيد.',
+    'cooling-tech-title': 'تقنيات التبريد',
+    'cooling-tech-1': 'مصانع الثلج الرقائقي: طاقة إنتاجية من 5 إلى 100 طن يوميًا, تقديم ثلج في -7 درجة مئوية لتخفيض سريع لدرجة حرارة الخرسانة.',
+    'cooling-tech-2': 'أنظمة المياه المبردة: تبريد حلقة مغلقة مع مبادلات حرارة صفائحية للحفاظ على درجات حرارة خلط خرسانة دقيقة.',
+    'cooling-tech-3': 'مصنع الثلج الأنبوبي: منشأة متخصصة تنتج ثلجًا أسطوانيًا شفافًا مع فتحة في الوسط عن طريق تجميد الماء داخل أنابيب فولاذية عمودية.',
+    'cooling-tech-4': 'مناولة الثلج التلقائية: نظام آلي من النواقل اللولبية والأحزمة والنفاخات الهوائية التي تحرك الثلج من الإنتاج إلى التخزين أو التعبئة دون عمل يدوي.',
+    'cooling-tech-5': 'غرفة تخزين الثلج: مساحة معزولة ومبردة مصممة لحفظ كميات كبيرة من الثلج في درجات حرارة تحت الصفر لمنع الذوبان والتكتل.',
+    'cooling-tech-6': 'نظام تبريد الهواء: شبكة من المراوح والمبخرات التي تدور الهواء المبرد للحفاظ على بيئة مستقرة ومنع كسب الحرارة داخل المنشأة.',
+    'cooling-img-1': 'مصنع الثلج الأنبوبي',
+    'cooling-img-2': 'مصنع الثلج الرقائقي',
+    'cooling-img-3': 'نظام المياه المبردة',
+    'cooling-img-4': 'مناولة الثلج التلقائية',
+    'cooling-img-5': 'أجزاء مناولة الثلج التلقائية',
+    'cooling-specs-title': 'المواصفات الفنية',
+    'cooling-specs-desc': 'أنظمتنا مصممة للتعامل مع صبات خرسانية ضخمة للأساسات والسدود والمباني الشاهقة. نوفر مراقبة درجة الحرارة في الموقع مع تسجيل بيانات في الوقت الفعلي لضمان الامتثال لمعايير ACI 305 لخرسانة الطقس الحار.',
+    'cooling-apps-title': 'تطبيقات المشروع',
+    'cooling-app-1': 'صبات الأساسات لمشاريع نيوم والبحر الأحمر',
+    'cooling-app-2': 'تبريد سطح الجسر لبنية تحتية ساحلية في جدة',
+    'cooling-app-3': 'صبات خرسانية ضخمة للمنشآت الصناعية ومحطات الطاقة',
+    'cooling-app-4': 'التحكم في درجة حرارة إنتاج الخرسانة المسبقة الصنع',
+   
+    // Sustainability page
+    'sustainability-title': 'الاستدامة وكفاءة الطاقة',
+    'sustainability-video-title': 'شاهد الاستدامة لدينا في العمارة',
+    'sustainability-video-unsupported': 'متصفحك لا يدعم علامة الفيديو.',
+    'sustainability-intro': 'نصنع مبانٍ موفرة للطاقة وصديقة للبيئة وجاهزة للمستقبل. تصاميمنا تقلل البصمة الكربونية وتدمج الطاقة المتجددة وتعزز رفاهية الإنسان.',
+    'sustainability-green-title': 'حلول البناء الأخضر',
+    'sustainability-green-1': 'تحديثات إضاءة LED: تحويل إلى أنظمة LED عالية الكفاءة مع أجهزة استشعار حركة, مما يقلل استهلاك الطاقة بنسبة تصل إلى 70٪.',
+    'sustainability-green-2': 'دمج الطاقة الشمسية: أنظمة تكييف هجينة تدمج جامعات شمسية حرارية للتسخين المسبق وتطبيقات التبريد.',
+    'sustainability-green-3': 'محركات سرعة متغيرة: تركيب VFD على المضخات والمراوح لتحسين استخدام الطاقة بناءً على الطلب في الوقت الفعلي.',
+    'sustainability-green-4': 'أنظمة استعادة الحرارة: التقاط الحرارة المهدرة من المبردات والضواغط لإنتاج المياه الساخنة المنزلية.',
+    'sustainability-impact-title': 'تقليل التأثير البيئي',
+    'sustainability-impact-1': 'تطبيق مبردات R-32 و R-410A ذات إمكانات احترار عالمي أقل',
+    'sustainability-impact-2': 'توفير المياه من خلال أنظمة إعادة تدوير المياه الرمادية في تركيبات الميكانيكا والكهرباء',
+    'sustainability-impact-3': 'ترقيات العزل الحراري لتقليل أحمال التكييف وإهدار الطاقة',
+    'sustainability-impact-4': 'أنظمة قياس ذكية وإدارة طاقة للتحسين المستمر',
+    'sustainability-vision-title': 'التوافق مع رؤية 2030',
+    'sustainability-vision-desc': 'مبادرات الاستدامة لدينا تدعم التزام المملكة بالطاقة المتجددة والحياد الكربوني. نوفر تقييمات مفصلة للبصمة الكربونية وتحليل العائد على الاستثمار لجميع مشاريع كفاءة الطاقة.',
+   
+    // Internal Architecture page
+    'internal-arch-title': 'المواصفات الفنية: العمارة الداخلية',
+    'internal-arch-intro': 'حلول العمارة الداخلية لدينا تركز على التخطيط الذكي للمساحة والتشطيبات عالية الجودة والتكامل السلس للأنظمة المعمارية والميكانيكية.',
+    'internal-arch-scope-title': 'نطاق العمل',
+    'internal-arch-scope-1': 'تخطيط المساحة: تخطيطات فعالة تحسن سير العمل والسلامة والراحة.',
+    'internal-arch-scope-2': 'أنظمة التقسيم: أقسام جبسية وزجاجية وألمنيوم ونمطية.',
+    'internal-arch-scope-3': 'أنظمة السقف: أسقف جبسية وألياف معدنية ومعدنية وصوتية.',
+    'internal-arch-scope-4': 'حلول الأرضيات: إيبوكسي وفينيل ورخام وبلاط سيراميك وأرضيات مرتفعة.',
+    'internal-arch-scope-5': 'النجارة والأعمال الخشبية: أبواب مخصصة وخزائن وألواح جدارية ومكاتب استقبال.',
+    'internal-arch-design-title': 'التصميم والامتثال',
+    'internal-arch-design-desc': 'جميع التصاميم تتوافق مع قوانين البناء السعودية ولوائح الدفاع المدني والمعايير المعمارية الدولية, مما يضمن السلامة والمتانة.',
+    'internal-arch-execution-title': 'التنفيذ والتشطيب',
+    'internal-arch-execution-desc': 'فرق التنفيذ الماهرة لدينا تضمن التركيب الدقيق والتشطيب المتميز والتسليم في الوقت المحدد مع رقابة صارمة على الجودة في كل مرحلة.',
+   
+    // Telecom page
+    'telecom-title': 'حلول البنية التحتية للاتصالات',
+    'telecom-intro': 'خدمات البنية التحتية للاتصالات الشاملة بما في ذلك تركيب الألياف الضوئية وتصميم الشبكات والصيانة المستمرة للمنشآت الصناعية والتجارية في جميع أنحاء المملكة.',
+    'telecom-fiber-title': 'حلول الألياف الضوئية',
+    'telecom-fiber-1': 'تركيب الألياف: تركيب كابلات الألياف الضوئية أحادية ومتعددة الوضع لنقل البيانات عالية السرعة.',
+    'telecom-fiber-2': 'اللحام والاختبار: خدمات اللحام الانصهاري مع اختبار OTDR لضمان جودة الإشارة المثلى.',
+    'telecom-fiber-3': 'الكابلات المنظمة: أنظمة الفئة 6A والعمود الفقري للألياف لشبكات المؤسسات.',
+    'telecom-fiber-4': 'المنشأة الخارجية: نشر الألياف الأرضية والهوائية لربط الحرم الجامعي والمنطقة الصناعية.',
+    'telecom-network-title': 'البنية التحتية للشبكة',
+    'telecom-network-1': 'مراكز البيانات: تركيب الرفوف وإدارة الكابلات وتوزيع الطاقة لغرف الخوادم.',
+    'telecom-network-2': 'الأنظمة اللاسلكية: تركيب نقاط الوصول WiFi وتحسين التردد اللاسلكي.',
+    'telecom-network-3': 'أنظمة الأمن: شبكات كاميرات IP ودمج نظام التحكم في الوصول.',
+    'telecom-network-4': 'اتصالات الطوارئ: أنظمة راديو ثنائية الاتجاه وبنية تحتية للإخطار بحالات الطوارئ.',
+    'telecom-support-title': 'الصيانة والدعم',
+    'telecom-support-desc': 'دعم فني على مدار 24/7 مع فرق استجابة سريعة لاستكشاف أخطاء الشبكة وإصلاح الألياف وترقيات النظام. نحتفظ بوثائق شاملة ورسومات كما تم بناؤها لجميع التركيبات.',
+   
+    // Manpower page
+    'manpower-title': 'خدمات توريد القوى العاملة المهنية',
+    'manpower-intro': 'توريد موثوق للعمالة الماهرة وغير الماهرة للمشاريع الصناعية والبناء والصيانة.',
+    'manpower-unskilled-title': 'خدمات العمالة غير الماهرة',
+    'manpower-unskilled-1': 'عمال بناء عامون لمشاريع مدنية وبناء',
+    'manpower-unskilled-2': 'معالجون للمواد وموظفو مستودعات',
+'manpower-unskilled-3': 'موظفو تنظيف وحراسة للمنشآت الصناعية',
+'manpower-unskilled-4': 'موظفو أمن الموقع والتحكم في الوصول',
+'manpower-compliance-title': 'الامتثال والسلامة',
+'manpower-compliance-1': 'جميع الموظفين يخضعون لتدريب سلامة شامل وشهادة',
+'manpower-compliance-2': 'امتثال كامل لقوانين العمل السعودية ولوائح التأمينات الاجتماعية',
+'manpower-compliance-3': 'فحوصات صحية منتظمة وشهادات اللياقة الطبية',
+'manpower-compliance-4': 'إدارة التوثيق بما في ذلك تصاريح العمل ومعالجة الإقامة',
+'manpower-management-title': 'إدارة القوى العاملة',
+'manpower-management-desc': 'نوفر حلول قوى عاملة كاملة بما في ذلك التوظيف والتأهيل وإدارة الرواتب ومراقبة الأداء. فريقنا يضمن أن جميع العمال مجهزون ومدربون ومشرف عليهم بشكل صحيح للحفاظ على أعلى معايير السلامة والإنتاجية.',
+// Rentals page
+'rentals-title': 'خدمات تأجير المعدات',
+'rentals-intro': 'حلول تأجير شاملة للآلات الثقيلة والمعدات المتخصصة للبناء والنفط والغاز والمشاريع الصناعية في جميع أنحاء المملكة.',
+'rentals-heavy-title': 'الآلات الثقيلة',
+'rentals-heavy-1': 'حفارات ورافعات: حفارات هيدروليكية من 5 إلى 50 طن ورافعات عجلات ورافعات خلفية.',
+'rentals-heavy-2': 'رافعات والرفع: رافعات متنقلة ورافعات برجية ورافعات مواد مع مشغلين معتمدين.',
+'rentals-heavy-3': 'معدات حركة الأرض: جرافات وآليات تسوية ومعدات الضغط لإعداد الموقع.',
+'rentals-heavy-4': 'مناولة المواد: رافعات شوكية ورافعات تلسكوبية ومنصات عمل جوية.',
+'rentals-img-1': 'الآلات الثقيلة',
+'rentals-specialized-title': 'المعدات المتخصصة',
+'rentals-specialized-1': 'اللحام والقطع: آلات لحام صناعية وقواطع بلازما ومعدات قطع الغاز.',
+'rentals-specialized-2': 'توليد الطاقة: مولدات ديزل من 20 kVA إلى 2000 kVA سعة.',
+'rentals-specialized-3': 'أنظمة الضخ: مضخات نزح المياه ومضخات الخرسانة ومضخات نقل كيميائية.',
+'rentals-specialized-4': 'الضواغط: ضواغط هواء للأدوات الهوائية وعمليات السفع الرملي.',
+'rentals-terms-title': 'شروط الإيجار والدعم',
+'rentals-terms-desc': 'فترات إيجار مرنة من يومية إلى عقود طويلة الأجل. جميع المعدات يتم صيانتها وفحصها بانتظام لامتثال السلامة. نوفر دعمًا فنيًا في الموقع وقطع غيار وخدمات أعطال طارئة لتقليل وقت التوقف.',
+// Construction page
+'construction-title': 'المقاولات العامة والأعمال المدنية',
+'construction-intro': 'خدمات إدارة البناء والهندسة المدنية الشاملة للمشاريع التجارية والصناعية والبنية التحتية في جميع أنحاء المملكة.',
+'construction-services-title': 'الخدمات الأساسية',
+'construction-services-1': 'بناء المباني: مباني تجارية ومستودعات ومنشآت صناعية من الأساس إلى التسليم.',
+'construction-services-2': 'الأعمال المدنية: تسوية الموقع وأعمال الحفر وأعمال الخرسانة والمرافق تحت الأرض.',
+'construction-services-3': 'البنية التحتية: طرق وأنظمة صرف وشبكات مياه ومنشآت معالجة الصرف الصحي.',
+'construction-services-4': 'التجديد والتحديث: تحديث الهياكل الموجودة وترقيات المرافق.',
+'construction-img-1': 'تطوير الموقع',
+'construction-img-2': 'بناء المباني',
+'construction-img-3': 'البنية التحتية',
+'construction-management-title': 'إدارة المشاريع',
+'construction-management-1': 'تخطيط وجدولة مفصلة للمشاريع باستخدام Primavera و MS Project',
+'construction-management-2': 'ضمان الجودة ومراقبة الجودة طوال جميع المراحل',
+'construction-management-3': 'أنظمة إدارة الصحة والسلامة والبيئة (HSE)',
+'construction-management-4': 'تقارير تقدم منتظمة وتواصل أصحاب المصلحة',
+'construction-compliance-title': 'الامتثال والمعايير',
+'construction-compliance-desc': 'يتم تنفيذ جميع المشاريع بامتثال كامل لقانون البناء السعودي (SBC) ومتطلبات الدفاع المدني ومعايير البناء الدولية. نحتفظ بوثائق جودة شاملة ونوفر دعم ضمان للأعمال المنجزة.',
+// Fabrication page
+'fabrication-title': 'خدمات تصنيع الصلب والأعمال المعدنية',
+'fabrication-video-title': 'شاهد قدرات التصنيع لدينا',
+'fabrication-video-unsupported': 'متصفحك لا يدعم علامة الفيديو.',
+'fabrication-intro': 'منشأة تصنيع متطورة توفر هياكل فولاذية مخصصة وبكرات أنابيب وأعمال معدنية دقيقة للتطبيقات الصناعية والتجارية.',
+'fabrication-structural-title': 'تصنيع الفولاذ الإنشائي',
+'fabrication-structural-1': 'الهياكل الفولاذية: تصنيع مخصص للعوارض والأعمدة والجمالونات والإطارات للمباني والمنشآت الصناعية.',
+'fabrication-structural-2': 'بكرات الأنابيب: تجميعات أنابيب مسبقة الصنع للنفط والغاز والبتروكيماويات ومحطات معالجة المياه.',
+'fabrication-structural-3': 'المنصات والممرات: منصات وصول صناعية وميزانين وممرات أمان مع شبكات ودرابزين.',
+'fabrication-structural-4': 'خزانات التخزين: تصنيع خزانات المياه وخزانات الوقود وأوعية العمليات بمعايير ASME.',
+'fabrication-img-1': 'الهياكل الفولاذية',
+'fabrication-capabilities-title': 'قدرات التصنيع',
+'fabrication-capabilities-1': 'القطع: قطع بلازما CNC وقطع بالأكسجين للصفائح حتى سمك 100 ملم.',
+'fabrication-capabilities-2': 'الثني واللف: مكابس هيدروليكية وآلات لف الصفائح للهندسة المعقدة.',
+'fabrication-capabilities-3': 'اللحام: عمليات SMAW و GMAW و GTAW و SAW مع لحامين معتمدين بـ ASME IX و AWS D1.1.',
+'fabrication-capabilities-4': 'معالجة السطح: السفع الرملي والطلاء والجلفنة للحماية من التآكل.',
+'fabrication-quality-title': 'ضمان الجودة',
+'fabrication-quality-desc': 'جميع أعمال التصنيع تخضع لفحص صارم بما في ذلك فحوصات الأبعاد واختبار NDT (RT، UT، MT، PT) وشهادة المواد. نحتفظ بتوثيق تتبع كامل ونوفر رسومات كما تم بناؤها لجميع المكونات المسلمة.',
+// Fire Safety page
+'fire-safety-title': 'أنظمة الحماية من الحرائق والسلامة',
+'fire-safety-intro': 'حلول حماية من الحرائق شاملة بما في ذلك تصميم النظام والتركيب والاختبار والصيانة للمنشآت التجارية والصناعية والسكنية في جميع أنحاء المملكة.',
+'fire-suppression-title': 'أنظمة إخماد الحرائق',
+'fire-suppression-1': 'أنظمة الرشاشات: أنظمة رشاشات رطبة وجافة ومسبقة التفعيل وطوفان مصممة بمعايير NFPA 13.',
+'fire-suppression-2': 'أنظمة FM-200: إخماد حريق بعامل نظيف لغرف الخوادم وغرف التحكم والمعدات الحساسة.',
+'fire-suppression-3': 'أنظمة الرغوة: أنظمة رغوة عالية التمدد ومنخفضة التمدد لتخزين المواد الخطرة.',
+'fire-suppression-4': 'أنظمة CO2: إخماد ثاني أكسيد الكربون للتطبيقات الصناعية والغرف الكهربائية.',
+'fire-img-1': 'أنظمة الرشاشات',
+'fire-img-2': 'أنظمة الكشف',
+'fire-img-3': 'معدات السلامة',
+'fire-detection-title': 'الكشف عن الحرائق والإنذار',
+'fire-detection-1': 'الأنظمة القابلة للعنونة: لوحات إنذار حريق ذكية مع تحديد فردي للجهاز ومراقبة الأعطال.',
+'fire-detection-2': 'كاشفات الدخان والحرارة: كاشفات ضوئية وأيونية ومتعددة الحساسات للإنذار المبكر.',
+'fire-detection-3': 'نقاط النداء اليدوية: محطات تنشيط إنذار كسر الزجاج موضوعة بشكل استراتيجي في جميع أنحاء المنشآت.',
+'fire-detection-4': 'إخلاء صوتي: أنظمة اتصال طارئة لإجراءات إخلاء منظمة.',
+'fire-safety-equipment-title': 'توريد معدات السلامة',
+'fire-safety-equipment-1': 'طفايات حريق محمولة (CO2، DCP، رغوة، ماء) مع تثبيت على الحائط ولافتات',
+'fire-safety-equipment-2': 'بكرات وخزائن خراطيم الحريق مع تصنيفات ضغط متوافقة',
+'fire-safety-equipment-3': 'إضاءة الطوارئ ولافتات الخروج مع نسخ احتياطي للبطارية',
+'fire-safety-equipment-4': 'بطانيات حريق ومحطات إسعافات أولية ومعدات طوارئ',
+'fire-compliance-title': 'الامتثال والشهادة',
+'fire-compliance-desc': 'جميع التركيبات تتوافق مع لوائح الدفاع المدني السعودي وأكواد NFPA ومعايير السلامة من الحرائق الدولية. نوفر اختبارًا وتكليفًا وخدمات صيانة سنوية شاملة مع توثيق وشهادة مفصلة.'
+  }
+};
+// ────────────────────────────────────────────────
+// LANGUAGE HANDLING WITH PERSISTENCE
+// ────────────────────────────────────────────────
+let currentLang = localStorage.getItem('preferredLanguage') || 'en';
+function setLanguage(lang) {
+  if (!['en', 'ar'].includes(lang)) return;
+  currentLang = lang;
+  localStorage.setItem('preferredLanguage', lang);
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
+  // Update active button state (if you have language toggle buttons)
+  document.getElementById('btn-en')?.classList.toggle('active-lang', lang === 'en');
+  document.getElementById('btn-ar')?.classList.toggle('active-lang', lang === 'ar');
+  // Update all translatable elements
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const key = el.getAttribute('data-key');
+    const text = translations?.[lang]?.[key];
+    if (text) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = text;
+      } else {
+        el.textContent = text;
+      }
+    }
+  });
+  // Special handling for "team" capitalization in English
+  const teamLink = document.querySelector('a[data-key="nav-team"]');
+  if (teamLink && lang === 'en') {
+    teamLink.textContent = 'Team';
+  }
+  // Optional: remove loading class after language is applied (if you use the CSS trick)
+  document.documentElement.classList.remove('js-loading');
+}
+// ────────────────────────────────────────────────
+// LANGUAGE BUTTONS (add your own HTML buttons if not already present)
+// Example: <button id="btn-en">English</button> <button id="btn-ar">العربية</button>
+// ────────────────────────────────────────────────
+document.getElementById('btn-en')?.addEventListener('click', () => setLanguage('en'));
+document.getElementById('btn-ar')?.addEventListener('click', () => setLanguage('ar'));
+// ────────────────────────────────────────────────
+// PAGE NAVIGATION
+// ────────────────────────────────────────────────
+function showPage(pageId) {
+  document.querySelectorAll('.page-content').forEach(page => {
+    page.style.display = 'none';
+  });
+  const target = document.getElementById(pageId);
+  if (target) {
+    target.style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  closeMobileMenu();
+}
+// ────────────────────────────────────────────────
+// MOBILE MENU
+// ────────────────────────────────────────────────
+function toggleMobileMenu() {
+  document.getElementById('main-menu')?.classList.toggle('active');
+}
+function closeMobileMenu() {
+  document.getElementById('main-menu')?.classList.remove('active');
+}
+// ────────────────────────────────────────────────
+// DROPDOWNS
+// ────────────────────────────────────────────────
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    const dropdown = toggle.closest('.dropdown');
+    const wasActive = dropdown.classList.contains('active');
+    document.querySelectorAll('.dropdown, .dropdown-submenu')
+      .forEach(el => el.classList.remove('active'));
+    if (!wasActive) dropdown.classList.add('active');
+  });
+});
+document.querySelectorAll('.dropdown-submenu .submenu-toggle').forEach(toggle => {
+  toggle.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggle.closest('.dropdown-submenu')?.classList.toggle('active');
+  });
+});
+document.addEventListener('click', e => {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown, .dropdown-submenu')
+      .forEach(el => el.classList.remove('active'));
+  }
+});
+// ────────────────────────────────────────────────
+// NAV HIDE / BACK TO TOP
+// ────────────────────────────────────────────────
+let lastScrollTop = 0;
+const nav = document.querySelector('nav');
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop && currentScroll > 150) {
+    nav?.classList.add('hidden');
+  } else {
+    nav?.classList.remove('hidden');
+  }
+  if (backToTopBtn) {
+    backToTopBtn.style.display = currentScroll > 300 ? 'block' : 'none';
+  }
+  lastScrollTop = Math.max(currentScroll, 0);
+}, { passive: true });
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+// ────────────────────────────────────────────────
+// INIT
+// ────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  // Apply saved (or default) language immediately
+  setLanguage(currentLang);
+  // AOS
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80,
+      anchorPlacement: 'top-bottom'
+    });
+  }
+  // Swiper – Project Slider
+  if (typeof Swiper !== 'undefined' && document.querySelector('.project-swiper')) {
+    new Swiper('.project-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  }
+  document.getElementById("jobForm")?.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Basic client-side validation example
+    const requiredFields = ['firstName', 'lastName', 'phone', 'email', 'location'];
+    let valid = true;
+
+    requiredFields.forEach(id => {
+      const field = document.getElementById(id);
+      if (!field.value.trim()) {
+        field.style.borderColor = '#ff5722';
+        valid = false;
+      } else {
+        field.style.borderColor = '#ccc';
+      }
+    });
+
+    if (!valid) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    // You can add AJAX/form submission logic here later
+    alert("Application submitted successfully! (Demo - connect to backend to send real data)");
+    
+    // Optional: reset form
+    // this.reset();
+  });
+});
+</script>
+</body>
+</html>
