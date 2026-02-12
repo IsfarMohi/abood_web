@@ -8,6 +8,8 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+
+## THIS IS FOR THE CONTACT FORM ##
 @app.route("/send", methods=["POST"])
 def send_email():
     name = request.form.get("name")
@@ -37,6 +39,64 @@ Message:
         smtp.send_message(msg)
 
     return redirect("/")
+
+
+
+## THIS IS FOR THE CV ##
+@app.route("/send_cv", methods=["POST"])
+def send_cv():
+    first_name = request.form.get("first_name")
+    last_name = request.form.get("last_name")
+    phone = request.form.get("contact_number")
+    email = request.form.get("email")
+    location = request.form.get("location")
+    prev_job = request.form.get("previous_job")
+    
+    cv_file = request.files.get("cv_file")
+
+    msg = EmailMessage()
+    msg["Subject"] = f"New Job Application: {first_name} {last_name}"
+    msg["From"] = "majindevil164@gmail.com"
+    msg["To"] = "mohiisfar@gmail.com"
+    msg["Reply-To"] = email
+
+    msg.set_content(f"""
+New Job Application Received
+
+Name: {first_name} {last_name}
+Email: {email}
+Phone: {phone}
+Location: {location}
+
+Previous/Current Job:
+{prev_job}
+    """)
+
+    if cv_file and cv_file.filename:
+        file_data = cv_file.read()
+        file_name = cv_file.filename
+        
+        # Add the attachment
+        msg.add_attachment(
+            file_data,
+            maintype="application",
+            subtype="pdf",
+            filename=file_name
+        )
+
+    print(f"Attempting to send CV for {first_name} {last_name}")
+    print(f"Attachment: {cv_file.filename if cv_file else 'None'}")
+
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login("majindevil164@gmail.com", "htdw sgyv oeig eobs")
+            smtp.send_message(msg)
+            print("CV Email sent successfully.")
+    except Exception as e:
+        print(f"Error sending CV email: {e}")
+
+    return redirect("/")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
