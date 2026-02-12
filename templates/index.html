@@ -2093,21 +2093,40 @@
   <!-- BACK TO TOP -->
   <button id="backToTop" onclick="scrollToTop()">↑</button>
 
-  <!-- MAIN CONTENT -->
-  <div id="main-site-content" class="page-content">
-    <!-- HERO -->
-    <header class="hero">
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="videos/hero-video.mp4" type="video/mp4">
-        <img src="assets/hero-fallback.jpg" alt="Hero Image">
-      </video>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1 data-key="hero-title">Industrial Excellence in Kingdom of Saudi Arabia</h1>
-        <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px;" data-key="hero-subtitle">Your trusted
-          partner for HVAC Maintenance, Concrete Cooling, and Global Industrial Supply Solutions.</p>
+<!-- MAIN CONTENT -->
+<div id="main-site-content" class="page-content">
+  
+  <!-- HERO -->
+  <header class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="{{ url_for('static', filename='videos/hero-video.mp4') }}" type="video/mp4">
+      <img src="{{ url_for('static', filename='assets/hero-fallback.jpg') }}" alt="Hero Image">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 data-key="hero-title">
+        Industrial Excellence in Kingdom of Saudi Arabia
+      </h1>
+
+      <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px;" data-key="hero-subtitle">
+        Your trusted partner for HVAC Maintenance, Concrete Cooling, and Global Industrial Supply Solutions.
+      </p>
+
+      <!-- DEMO VIDEO SECTION -->
+      <div style="margin-top: 40px; text-align: center;">
+        <h3 style="margin-bottom: 20px;">Company Demo</h3>
+
+        <video width="720" controls style="border-radius: 12px; max-width: 100%;">
+          <source src="{{ url_for('static', filename='videos/vid1.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-    </header>
+
+    </div>
+  </header>
+
 
     <!-- ABOUT -->
     <section class="about-section" id="about">
