@@ -2114,15 +2114,20 @@
         Your trusted partner for HVAC Maintenance, Concrete Cooling, and Global Industrial Supply Solutions.
       </p>
 
-      <!-- DEMO VIDEO SECTION -->
-      <div style="margin-top: 40px; text-align: center;">
-        <h3 style="margin-bottom: 20px;">Company Demo</h3>
+  <!-- DEMO VIDEO SECTION --> 
+  <div style="margin-top: 40px; text-align: center;">
+    <h3 style="margin-bottom: 20px;">Company Demo</h3>
 
-        <video width="720" controls style="border-radius: 12px; max-width: 100%;">
-          <source src="{{ url_for('static', filename='videos/vid1.mp4') }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <video width="720" controls preload="metadata"
+          style="border-radius: 12px; max-width: 100%;">
+      
+      <source src="https://res.cloudinary.com/de47453fj/video/upload/f_auto,q_auto/v1770926810/vid1_mh2yce.mp4" 
+              type="video/mp4">
+      
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
 
     </div>
   </header>
